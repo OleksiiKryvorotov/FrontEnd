@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JC Menu</title>
+
+    <style>
+        :root {
+            --sidebar-width: 200px;
+        }
+       .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width:  var(--sidebar-width);
+        background: gold;
+        transform: translateX(calc(var(--sidebar-width) * -1));
+        transition: all .3s ease-out;       
+       }
+       .menu-open {
+        transform: none;
+       }
+       header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       }
+       button {
+        background: blue;
+        color: white;
+        padding: 1rem 2rem;
+        font-size: 1.5rem;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.5s ease-out;
+
+       }
+        button:hover {
+            background: rgb(115, 223, 20);
+        }
+    </style>
+
+
+</head>
+<body>   
+    <div class ="menu"></div>
+    <header>
+        <h1>  About Company </h1>
+
+            <button onclick="toggleMenu()">Menu</button>                
+
+    </header>       
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, aperiam atque necessitatibus accusamus aliquid ad in dicta nesciunt assumenda autem impedit esse est asperiores alias aspernatur nulla, beatae id quis.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, neque nesciunt. Corporis eius tempora cumque, soluta adipisci cupiditate? Maxime quis hic maiores! Porro deserunt mollitia praesentium harum iste fuga sunt.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni tempora aut fuga porro sunt aliquid, at mollitia. Deleniti dolorum natus voluptas! Perferendis animi debitis mollitia architecto ab aliquam. Voluptatum, quo.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nulla, eius quo excepturi qui atque molestiae repudiandae id ullam, veritatis explicabo fuga corporis hic consectetur dignissimos! Rerum ut quas eaque.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error a quae et suscipit quam laudantium cupiditate ullam soluta cumque molestiae in, ut quia placeat ad rerum perferendis consequuntur provident doloribus!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia a unde dolorum deleniti officia in! Eius dolor rerum modi eum beatae vero labore hic et numquam adipisci, iste doloribus tempore?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, aperiam atque necessitatibus accusamus aliquid ad in dicta nesciunt assumenda autem impedit esse est asperiores alias aspernatur nulla, beatae id quis.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, neque nesciunt. Corporis eius tempora cumque, soluta adipisci cupiditate? Maxime quis hic maiores! Porro deserunt mollitia praesentium harum iste fuga sunt.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni tempora aut fuga porro sunt aliquid, at mollitia. Deleniti dolorum natus voluptas! Perferendis animi debitis mollitia architecto ab aliquam. Voluptatum, quo.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nulla, eius quo excepturi qui atque molestiae repudiandae id ullam, veritatis explicabo fuga corporis hic consectetur dignissimos! Rerum ut quas eaque.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error a quae et suscipit quam laudantium cupiditate ullam soluta cumque molestiae in, ut quia placeat ad rerum perferendis consequuntur provident doloribus!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia a unde dolorum deleniti officia in! Eius dolor rerum modi eum beatae vero labore hic et numquam adipisci, iste doloribus tempore?
+        </p>
+
+        <script>
+           function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('menu-open');
+        }
+        </script>
+    
+
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="path/to/line-awesome/css/line-awesome-font-awesome.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body,
+      .wrapper {
+        width: 90%;
+        height: 100%;
+        
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        font-family: "Roboto", sans-serif;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;       
+      }
+
+      ul {
+        display: flex;
+        align-items: center;
+      }
+      li {
+        list-style: none;
+      }
+      li a {
+        color: black;
+        text-decoration: none;
+        font-weight: 600;
+        padding: 10px 40px;
+      }
+      .button {
+        background: #0ca278;
+        color: white;
+        padding: 10px 20px;
+        font-size: 1.3rem;
+        border: none;
+        border-radius: 38px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.5s ease-out;
+      }
+      nav {
+        display: flex;
+        margin-left: 630px;
+        align-items: center;
+      }
+      .block {
+        display: flex;
+        align-items: center;
+        font-size: 2.5rem;
+      }
+      .picture {
+        margin-left: 200px;
+        width: 1200px;
+        height: 600px;
+        object-fit: cover;
+      }
+      .figure1 {
+        display: flex;
+        align-items: center;
+      }
+      .figure2 {
+        display: flex;
+        margin-left: 35px;
+        align-items: center;
+        justify-content:space-between;
+
+        }
+      .button1,
+      button2 {
+        margin: 10px;
+        width: 200px;
+        background-color: rgb(7, 7, 7);
+        color: white;
+        padding: 2rem 2rem;
+        font-size: 1rem;
+        border-radius: 28px;
+        cursor: pointer;
+        transition: all 0.5s ease-out;
+      }
+
+      h1 {
+        margin-bottom: 200px;
+      }
+      .columns {
+        display: flex;
+        margin-top: 100px;
+        justify-content: space-between;
+        align-items: center;        
+      }
+      .down {
+        display: block;
+        margin: 0px;
+        padding: 20px;
+        height: 300px;
+    border: 5px solid grey;
+    border-radius: 20px;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <aside class="header">
+        <ul>
+          <figure class="figure">
+            <img
+              src="https://oleksiikryvorotov.github.io/FrontEnd/bensinl.png"
+              alt=""
+            />
+          </figure>
+          <nav>
+            <li>
+              <a href="Home">Home</a>
+            </li>
+            <li>
+              <a href="Feature">Feature</a>
+            </li>
+            <li>
+              <a href="Screen">Screen</a>
+            </li>
+            <li>
+              <a href="Pricing">Pricing</a>
+            </li>
+            <li>
+              <a href="Team">Team</a>
+            </li>
+            <li>
+              <a href="Question">Question</a>
+            </li>
+
+            <button class="button" onclick="toggleMenu()">Get Started</button>
+          </nav>
+        </ul>
+      </aside>
+      <div class="block">
+        <h1>
+          Refueling a <br />car at your <br />
+          adress
+        </h1>
+
+        <img
+          class="picture"
+          src="https://oleksiikryvorotov.github.io/FrontEnd/original1.png"
+          alt=""
+        />
+      </div>
+
+      <figure1 class="figure1">
+        <div class="button1">
+          <button1 onclick="toggleMenu()">Apple Store</button1>
+        </div>
+
+        <div class="button2">
+          <button2 onclick="toggleMenu()">GOOGLE PLAY</button2>
+        </div>
+      </figure1>
+      <figure2 class="figure2">
+        <a href>
+          <img
+            src="https://oleksiikryvorotov.github.io/FrontEnd/instagram.svg"
+            alt=""
+          />
+          <img
+            src="https://oleksiikryvorotov.github.io/FrontEnd/facebook.svg"
+            alt=""
+          />
+          <img
+            src="https://oleksiikryvorotov.github.io/FrontEnd/twitter.svg"
+            alt=""
+          />
+        </a>
+      </figure2>
+      <div class="columns">
+        <figure class="down">
+          <img
+            src="https://img.icons8.com/material/48/null/tenses.png"
+            alt=""
+          />
+
+          <h3>Specified order</h3>
+          <p>Refueling your car at the time and date yuo specify</p>
+        </figure>
+        <figure class="down">
+          <img
+            src="https://img.icons8.com/material/48/null/find-hospital.png"
+            alt=""
+          />
+          <h3>Delivery</h3>
+          <p>Refueling is carried out anywhere in the city</p>
+        </figure>
+        <figure class="down">
+          <img
+            src="https://img.icons8.com/material/48/null/report-card--v1.png"
+            alt=""
+          />
+          <h3>Payments types</h3>
+          <p>Make a payment in any way convenient for you</p>
+        </figure>
+      </div>
+    </div>
+  </body>
+</html>

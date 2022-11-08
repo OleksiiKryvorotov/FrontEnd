@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 5px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        html,
+        body,
+        .wrapper {
+            height:  100%;
+            width: 100%;
+        }
+        .wrapper>div {
+            background: rgb(75, 111, 21);
+        }
+        .wrapper {
+            display: grid;
+            grid-template-columns: 300px 300px 300px 300px;
+            grid-template-rows: 300px 300px 300px;
+            grid-template-areas:
+            "sidebar banner banner headera"
+            "sidebar maina mainb headerb"
+            "sidebar mainc maind headerb";
+            gap:  20px;
+
+        }
+        .sidebar {
+            grid-area: sidebar
+        }
+        .headera {
+            grid-area: headera              
+        }
+        .headerb {
+            grid-area: headerb              
+        }
+        .maina {
+            grid-area: maina
+        }
+        .mainb {
+            grid-area: mainb
+        }
+        .mainc {
+            grid-area: mainc
+        }
+        .maind {
+            grid-area: maind
+        }
+        .banner {
+            grid-area: banner
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar"></div>
+        <div class="headera"></div>
+        <div class="headerb"></div>
+        <div class="maina"></div>
+        <div class="mainb"></div>
+        <div class="mainc"></div>
+        <div class="maind"></div>
+        <div class="banner"></div>
+        
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пример HW01_11</title>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,
+        body,
+        .wrapper {
+            height: 100%;
+        }
+        
+        main {
+            background: #d3d3d3;            
+        }
+        section {
+            background: lightblue;
+            
+        }
+        .wrapper {
+               width: 1024px;
+               display: grid;
+               grid-template-rows: 100px auto 450px;
+
+        }
+        body {
+            display: flex;
+            justify-content: center;
+        }
+        aside {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        li {
+            list-style: none;
+            
+        }
+        li a{
+            color: black;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 10px 40px;
+        }                      
+        .button {
+            background: green;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 18px;
+            text-decoration: none;
+        }
+        ul {
+            display: grid;
+            grid-template-columns: ;
+        }
+        
+        .icons {
+            width: 50px;
+            aspect-ratio: 1;
+            color: black;
+            border: 1px solid;
+            border-radius: 50%;
+            margin-right: 10px;
+            text-decoration: none;
+            font-size: 1.5rem;
+            display: inline-flex;
+            justify-content: center;
+            
+        }
+        /*адапатция для мобильных:*/
+       
+        /*@media (max-width: 768px) {
+            .icons,
+            nav {
+                display: none;
+              }  
+              h2 {
+                display: block;
+              }  
+            }*/
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <aside class="header">
+            <figure class="header__figure">
+                <img class="header__image" src="https://oleksiikryvorotov.github.io/FrontEnd/logo.svg" alt="">
+            </figure>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="//google.de">Link 1</a>
+                    </li>
+                    <li>
+                        <a href="">Link 2</a>  
+                    </li>                        
+                    <li>
+                        <a href="">Link 3</a>  
+                    </li> 
+                        <a class="button" href="//google.de" target="_blank">Link 4</a> 
+                                          
+                </ul>
+            </nav>
+        </aside>
+
+        <main>
+            
+   <div class="icons">        
+        <i class="las la-skull-crossbones"></i>
+        <i class="las la-cloud-download-alt"></i>    
+        <i class="las la-spider"></i>
+    </a>
+    </div>
+        </main>
+
+        <section>
+
+        </section>
+    </div>
+    
+</body>
+</html>

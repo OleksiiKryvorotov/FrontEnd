@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID</title>
+
+     <style> 
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html,
+    body,
+    .wrapper {
+      height: 100%;
+    }
+    .wrapper > div{
+        background-color: rgb(51, 255, 0);
+    }
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 150px);
+        grid-template-rows: repeat(3,100px);
+        grid-template-areas:
+          "sidebar banner banner headerapp "
+          "sidebar maina mainb headerdaun"
+          "sidebar mainc maind headerdaun";
+        gap: 10px;
+    }
+    .sidebar {
+        grid-area: sidebar;
+      }
+    .headerapp {
+        grid-area: headerapp;
+        color: rgb(184, 11, 11);
+    }
+    .headerdaun {
+        grid-area: headerdaun;
+    }
+    .maina {
+        grid-area: maina;
+    }
+    .mainb {
+        grid-area: mainb;
+    }
+    .mainc {
+        grid-area: mainc;
+    }
+    .maind {
+        grid-area: maind;
+    }
+    .banner{
+        grid-area: banner;
+    }
+
+    </style>
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar"></div>
+        <div class="headerapp"></div>
+        <div class="headerdaun"></div>
+        <div class="maina"></div>
+        <div class="mainb"></div>
+        <div class="mainc"></div>
+        <div class="maind"></div>
+        <div class="banner"></div>
+    </div>
+</body>
+</html>
