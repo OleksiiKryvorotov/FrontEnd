@@ -16,8 +16,8 @@
     @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap");    
     body {
        font-family: 'Lato', sans-serif;
-       display: flex;
-       justify-content: center;
+       display: flex;       
+       justify-content: center;             
     }
     * {
         margin: 0;
@@ -25,31 +25,31 @@
         box-sizing: border-box;
     }
     html,
-    body,
-    .wrapper {
-            height: 100%;            
-        }
-       
+    body,      
         .wrapper {
+            height: 100%; 
             display: grid;
             grid-template-columns: 200px auto 200px;
-            width: 960px;
+            width: 1200px;
         }
         .sidebar {
             background: gold;
         }
         main {
+            display: flex;            
             background: white;
-            padding: 40px;            
+            padding: 40px;                      
         }
         .userbar {
             background: lightgrey;
         }
         .search {
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            width: 300px;
+            width: 270px;
+            height: 50px;
             border-radius:12px;
             padding-left: 10px; 
+            margin-left: 270px;
         }
         .search__input {
             border: none;
@@ -59,13 +59,33 @@
         .search__input:focus {
             outline: none;
         }
-        .search icon {
+        .search__icon {
             font-size: 1.5rem;
             color: gray;
         }
+        .bell {             
+            margin: 0px 10px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            width: 50px;
+            height: 50px;
+            border-radius:12px;           
+        }
+        .bell:focus {
+            outline: none;
+        }
+        .icon {
+            margin: 10px;
+            justify-content: center;
+            font-size: 2rem;
+            color: gray;
+        }
+      
+        
+        
+        
+        
     </style>
 </head>
-
 <body>
     <div class="wrapper">
         <aside class="sidebar">
@@ -73,20 +93,31 @@
         </aside>
 
         <main>
-         <div class="search">
+            <h1>Dashboard</h1>                  
+         <div class="search">            
             <span class="search__icon">
             <i class="las la-search">                
-            </i>
+            </i>      
             </span>
-
             <input type="text"
             class="search__input"
             placeholder="Search">
          </div>
-        </main>
+         <span class="bell">  
+            <div class="icon">                  
+            <i  class="las la-bell">                
+            </i>  
+        </div>                
+        </span>  
+              
+    </main>     
+             
+        
         <div class="userbar">
 
-        </div>
+    </div>
+    
+</div>
     
 </body>
 </html>
