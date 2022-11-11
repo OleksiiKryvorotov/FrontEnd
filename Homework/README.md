@@ -1,1 +1,1 @@
- [Макет](https://github.com/OleksiiKryvorotov/FrontEnd/tree/master/Homework/Maket22.html)
+Maket2    https://oleksiikryvorotov.github.io/FrontEnd/Homework/Maket22.html
