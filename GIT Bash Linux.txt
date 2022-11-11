@@ -125,7 +125,83 @@ git rm --cached название файла
 КАК УДАЛИТЬ ФАЙЛ ВЕЗДЕ
 git rm имя_файла
 =============================================================================
+ИСПРАВЛЕНИЕ ОШИБОК В GIT HUB!!!!!!!!!!!!!!!!!!!
+MimRoda@DESKTOP-SIPJP96 MINGW64 /d/IT курсы/Frontend (master)
+------------
+$ git status
+------------
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)     
 
+nothing to commit, working tree clean
+
+MimRoda@DESKTOP-SIPJP96 MINGW64 /d/IT курсы/Frontend (master)
+------------
+$ git log
+------------
+commit 7060eaf645417f645a34262eb145a2d54fd880b4 (HEAD -> master)
+Author: alexykr alexykr <sumskaqqq@gmail.comgit config --global user.name Oleksii>
+Date:   Thu Nov 10 17:02:37 2022 +0100
+
+    update
+
+commit 09aa42ed5aff6666be860eebc17c25203f869796
+Author: alexykr alexykr <sumskaqqq@gmail.comgit config --global user.name Oleksii>
+Date:   Thu Nov 10 11:41:21 2022 +0100
+
+    CW
+
+commit 4f67ebbede1a32edfcc40c0e48ec37d8033543e2 (origin/master)
+Author: alexykr alexykr <sumskaqqq@gmail.comgit config --global user.name Oleksii>
+Date:   Thu Nov 10 09:49:38 2022 +0100
+
+
+MimRoda@DESKTOP-SIPJP96 MINGW64 /d/IT курсы/Frontend (master)
+---------------------------
+$ git pull origin master
+---------------------------
+remote: Enumerating objects: 41, done.
+remote: Counting objects: 100% (41/41), done.
+remote: Compressing objects: 100% (26/26), done.
+remote: Total 41 (delta 17), reused 34 (delta 14), pack-reused 0
+Unpacking objects: 100% (41/41), 9.79 KiB | 3.00 KiB/s, done.
+From github.com:OleksiiKryvorotov/FrontEnd
+ * branch            master     -> FETCH_HEAD
+   4f67ebb..3b8c57b  master     -> origin/master
+Auto-merging Classwork/November2022/Lesson10_11.html
+CONFLICT (add/add): Merge conflict in Classwork/November2022/Lesson10_11.html
+Auto-merging Classwork/November2022/Lesson10_11_2.html
+CONFLICT (add/add): Merge conflict in Classwork/November2022/Lesson10_11_2.html
+Auto-merging Classwork/November2022/Lesson10_11_3.html
+CONFLICT (add/add): Merge conflict in Classwork/November2022/Lesson10_11_3.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+MimRoda@DESKTOP-SIPJP96 MINGW64 /d/IT курсы/Frontend (master|MERGING)
+----------------
+$ git add .
+---------------
+
+MimRoda@DESKTOP-SIPJP96 MINGW64 /d/IT курсы/Frontend (master|MERGING)
+-----------------------
+$ git commit -m 'resul'
+-----------------------
+[master a876f6b] resul
+
+MimRoda@DESKTOP-SIPJP96 MINGW64 /d/IT курсы/Frontend (master)
+-----------
+$ git push
+----------
+Enumerating objects: 44, done.
+Counting objects: 100% (40/40), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (25/25), done.
+Writing objects: 100% (25/25), 4.13 KiB | 2.06 MiB/s, done.
+Total 25 (delta 16), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (16/16), completed with 8 local objects.
+To github.com:OleksiiKryvorotov/FrontEnd.git
+   3b8c57b..a876f6b  master -> master
+=======================================================================================================
 
 
 
