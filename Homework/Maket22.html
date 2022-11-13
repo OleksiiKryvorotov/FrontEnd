@@ -30,7 +30,7 @@
       }
       .wrapper {
         display: grid;
-        width: 1200px;
+        width: 1400px;
         grid-template-columns: 200px auto 200px;
       }
       .sidebar {
@@ -39,38 +39,43 @@
       main {
         display: block;
         background: white;
-        padding: 40px;
+        padding: 40px;        
       }
       nav {
         display: flex;
         align-items: center;
+        margin-top: 10px;
+        margin-bottom: 30px;
       }
 
       .userbar {
-        background: lightgrey;
+        display: block;
+        margin-top: 40px;
       }
       .search {
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         width: 270px;
         height: 50px;
         border-radius: 12px;
-        padding-left: 10px;
-        margin-left: 270px;
+        margin: 0px 10px 0px 460px;
       }
       .search__input {
         border: none;
         font-size: 1rem;
-        padding: 1rem;
+        margin-top: 18px;
+        padding-left: 10px;
       }
       .search__input:focus {
         outline: none;
       }
       .search__icon {
-        font-size: 1.5rem;
-        color: gray;
+        margin-top: 20px;
+        padding-left: 10px;
+        font-size: 1.5rem;      
+         color: gray;
       }
       .bell {
-        margin: 0px 10px;
+        margin: 0px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         width: 50px;
         height: 50px;
@@ -80,11 +85,12 @@
         outline: none;
       }
       .icon {
-        margin: 10px;
+        margin: 8px 0px 10px 10px;
         justify-content: center;
         font-size: 2rem;
         color: gray;
       }
+      
       .images {
         display: flex;
         margin: 40px 0px;
@@ -98,37 +104,75 @@
       }
       .title {
         display: flex;
-        margin: 40px 40px 0px 0px;
+        margin: 40px 50px 0px 0px;
         justify-content: space-between;
         align-items: center;
-        color: gray;
-      }
-      .h6_1 {
-        margin-right: 270px;
-      }
-      li {
+        color: gray;              
+      }     
+      .tabelle {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: -2rem;
+            margin-left: 190px;
+            font-size: 14px; 
+                                 
+        }
+        .tabelle__li {
             list-style: none;
-            width: calc(100% / 7);
+            width: calc(90% / 3);
             aspect-ratio: 1;
             display: flex;
             justify-content: center;
             align-items: center;
+            font-weight: 600;                       
+        }        
+      .h6_1 {
+        margin-right: 270px;
       }
-      .images {
-        display: block:
+      section {
+        display: flex;
+      }
+      
+      .images2 {
+        display: block;
+        
       }
       .maket1 {
         display: flex;
-        margin: 15px 15px 0px 0px;
+        margin: 15px 0px 0px 0px;
       }
       .title1 {
-        margin: 8px;
+        margin: 40px 0px 0px 10px;
       }
       .p1 {
-        margin: 8px;
+        margin: 0px 0px 0px 10px;
         font-size: 12px;
         color: gray;
       }
+      .calendar {
+        width: 400px;
+        
+      }
+      ul {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: -2rem;
+        }
+        li {
+            list-style: none;
+            width: calc(90% / 7);
+            aspect-ratio: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .is-bold {
+            font-weight: 600 ;
+        }
+        .header__userbar {
+          margin: 40px 10px;
+        }
     </style>
   </head>
   <body>
@@ -160,19 +204,21 @@
         <h3>My Courses</h3>
         <a href="View All">View All</a>
       </div>
-        <section>
+        
           <div class="title">
             <h6 class="h6_1">Course name</h6>
-            <h6>Start</h6>
+            <h6>Start</h6>                       
             <h6>Rate</h6>
             <h6>Level</h6>
           </div>
+
+          <section>
           <div class="images2">
             <div class="maket1">
               <img src="img/Maket6.png" alt="" />
               <ul>
                 <h5 class="title1">Web Disign</h5>
-                <p class="p1">10 Lessons</p>
+                <p class="p1">10 Lessons</p>                          
               </ul>
             </div>
             <div class="maket1">
@@ -181,7 +227,7 @@
                 <h5 class="title1">Development Basics</h5>
                 <p class="p1">8 Lessons</p>
               </ul>
-            </div>
+            </div>               
             <div class="maket1">
               <img src="img/Maket8.png" alt="" />
               <ul>
@@ -202,49 +248,82 @@
                 <h5 class="title1">JavaScript</h5>
                 <p class="p1">8 Lessons</p>
               </ul>
-            </div>
-          </div>
-          <ul class="dates">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
+             </div>             
+             </div>
+
+              <ul class="tabelle">                  
+              <li class="tabelle__li">May 12</li>
+              <li class="tabelle__li">4.8</li>
+              <li class="tabelle__li">Elementary</li>
+              <li class="tabelle__li">May 14</li>
+              <li class="tabelle__li">4.4</li>
+              <li class="tabelle__li">Intermediate</li>
+              <li class="tabelle__li">May 17</li>
+              <li class="tabelle__li">4.6</li>
+              <li class="tabelle__li">Intermediate</li>
+              <li class="tabelle__li">May 26</li>
+              <li class="tabelle__li">4.7</li>
+              <li class="tabelle__li">Elementary</li>
+              <li class="tabelle__li">May 30</li>
+              <li class="tabelle__li">4.9</li>
+              <li class="tabelle__li">Elementary</li>
+           </ul>
+         
         </section>
       </main>
-      <div class="userbar"></div>
+      <div class="userbar">
+        <img src="img/Maket5.png" alt="">
+      
+      <h3 class="header__userbar">
+        May 2022
+    </h3>
+    <div class="calendar">
+    <ul>
+       <li class="is-bold">Sun</li>
+      <li class="is-bold">Mon</li>
+      <li class="is-bold">Tue</li>
+      <li class="is-bold">Wed</li>
+      <li class="is-bold">Thu</li>
+      <li class="is-bold">Fri</li>
+      <li class="is-bold">Sat</li>
+      <li>42</li>
+      <li>42</li>
+      <li>42</li>
+      <li>42</li>
+      <li>42</li>
+      <li>42</li>
+      <li>42</li>
+      <li>42</li>
+      <li>42</li>
+      <li>42</li>
+      <li>42</li>
+      <li>42</li>
+      <li>42</li>
+      <li>42</li>
+      <li>42</li>
+      <li>42</li>
+      <li>42</li>
+      <li>42</li>
+      <li>42</li>
+      <li>42</li>
+      <li>42</li>
+      <li>42</li>
+      <li>42</li>
+      <li>42</li>
+      <li>42</li>
+      <li>42</li>
+      <li>42</li>
+      <li>42</li>
+      <li>42</li>
+      <li>42</li>
+      <li>42</li>
+      <li>42</li>
+      <li>42</li>
+      <li>42</li>
+      <li>42</li>      
+    </div>
+    </div>  
+    </ul>
     </div>
   </body>
 </html>
