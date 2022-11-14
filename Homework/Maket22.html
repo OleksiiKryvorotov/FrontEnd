@@ -30,28 +30,27 @@
       }
       .wrapper {
         display: grid;
-        width: 1400px;
+        width: 1000px;
         grid-template-columns: 200px auto 200px;
       }
       .sidebar {
-        background: gold;
+        display: block;
       }
       main {
         display: block;
         background: white;
         padding: 40px;        
       }
+      .userbar {
+        display: block;
+        margin-top: 40px;
+      }
       nav {
         display: flex;
         align-items: center;
         margin-top: 10px;
         margin-bottom: 30px;
-      }
-
-      .userbar {
-        display: block;
-        margin-top: 40px;
-      }
+      }      
       .search {
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         width: 270px;
@@ -113,17 +112,14 @@
             display: flex;
             flex-wrap: wrap;
             margin-top: -2rem;
-            margin-left: 190px;
-            font-size: 14px; 
-                                 
+            margin-left:300px;
+            font-size: 14px;                                  
         }
         .tabelle__li {
             list-style: none;
-            width: calc(90% / 3);
+            width: calc(80% / 3);
             aspect-ratio: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            display: flex;            
             font-weight: 600;                       
         }        
       .h6_1 {
@@ -131,6 +127,7 @@
       }
       section {
         display: flex;
+        
       }
       
       .images2 {
@@ -173,11 +170,58 @@
         .header__userbar {
           margin: 40px 10px;
         }
+        .button1 {
+        margin: 20px 0px 0px;
+        width: 200px;
+        background-color: white;
+        color: gray;
+        padding: 1.1rem;
+        font-size: 1.5rem;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.5s ease-out;
+      }      
+        .button2 {
+        margin: 28px 0px 20px;
+        width: 350px;
+        background-color: rgb(128, 70, 190);
+        color: white;
+        padding: 1.5rem 0rem 1.5rem 7rem;
+        font-size: 1rem;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.5s ease-out;
+      }
     </style>
   </head>
   <body>
     <div class="wrapper">
-      <aside class="sidebar"></aside>
+      <aside class="sidebar">
+<div class="menu">
+  <figure1 class="figure">
+    <div class="button1">     
+      <button1 onclick="toggleMenu()">Dashboard</button1>
+    </div>   
+   </script>
+    <div class="button1">        
+      <button2 onclick="toggleMenu()">Courses</button2>
+    </div>      
+    <div class="button1">            
+      <button2 onclick="toggleMenu()">Chats</button2>
+    </div>  
+    <div class="button1">            
+      <button2 onclick="toggleMenu()">Grades<button2>
+    </div>
+    <div class="button1">            
+      <button2 onclick="toggleMenu()">Schedule</button2>
+    </div>
+    <div class="button1">            
+      <button2 onclick="toggleMenu()">Settings</button2>
+    </div>
+  </figure1>
+ 
+</div>
+      </aside>
 
       <main>
         <nav>
@@ -250,7 +294,7 @@
               </ul>
              </div>             
              </div>
-
+            
               <ul class="tabelle">                  
               <li class="tabelle__li">May 12</li>
               <li class="tabelle__li">4.8</li>
@@ -267,9 +311,9 @@
               <li class="tabelle__li">May 30</li>
               <li class="tabelle__li">4.9</li>
               <li class="tabelle__li">Elementary</li>
-           </ul>
-         
-        </section>
+           </ul>         
+          </section>
+        
       </main>
       <div class="userbar">
         <img src="img/Maket5.png" alt="">
@@ -286,44 +330,58 @@
       <li class="is-bold">Thu</li>
       <li class="is-bold">Fri</li>
       <li class="is-bold">Sat</li>
-      <li>42</li>
-      <li>42</li>
-      <li>42</li>
-      <li>42</li>
-      <li>42</li>
-      <li>42</li>
-      <li>42</li>
-      <li>42</li>
-      <li>42</li>
-      <li>42</li>
-      <li>42</li>
-      <li>42</li>
-      <li>42</li>
-      <li>42</li>
-      <li>42</li>
-      <li>42</li>
-      <li>42</li>
-      <li>42</li>
-      <li>42</li>
-      <li>42</li>
-      <li>42</li>
-      <li>42</li>
-      <li>42</li>
-      <li>42</li>
-      <li>42</li>
-      <li>42</li>
-      <li>42</li>
-      <li>42</li>
-      <li>42</li>
-      <li>42</li>
-      <li>42</li>
-      <li>42</li>
-      <li>42</li>
-      <li>42</li>
-      <li>42</li>      
+      <li>28</li>
+      <li>29</li>
+      <li>30</li>
+      <li>31</li>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+      <li>7</li>
+      <li>8</li>
+      <li>9</li>
+      <li>10</li>
+      <li>11</li>
+      <li>12</li>
+      <li>13</li>
+      <li>14</li>
+      <li>15</li>
+      <li>16</li>
+      <li>17</li>
+      <li>18</li>
+      <li>19</li>
+      <li>20</li>
+      <li>21</li>
+      <li>22</li>
+      <li>23</li>
+      <li>24</li>
+      <li>25</li>
+      <li>26</li>
+      <li>27</li>
+      <li>28</li>
+      <li>29</li>
+      <li>30</li>
+      <li>31</li> 
+    </ul>           
+    </div>    
+    <h3>Homework progress</h3>
+
+    <figure1 class="figure1">
+      <div class="button2">     
+        <button1 onclick="toggleMenu()">Styling with SCC<br>12 tasks</button1>
+      </div>
+      <div class="button2">        
+        <button2 onclick="toggleMenu()">Basics of programming<br>18 tasks</button2>
+      </div>      
+      <div class="button2">            
+        <button2 onclick="toggleMenu()">Learn to Programm Java<br>10 tasks</button2>
+      </div>  
+    </figure1>
+    </div>     
     </div>
-    </div>  
-    </ul>
-    </div>
+   
   </body>
 </html>
