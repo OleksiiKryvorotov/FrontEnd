@@ -6,58 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <style>
-.wrapper {
-    height: 100%;
-}
-
-.main {
-   display: block;
-        background: blue;
-        margin: 40px;
-        padding: 40px;
-        width: 350px;
-        height: 800px;
-        border-radius: 20px;
-        justify-content: center;
-        
-}
-.header {
-    margin-top: 250px;
-    color: white;
-    font-size: 4rem;
-    text-align: left;
+<style>
+    * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,
+        body,
+        .wrapper {
+            height: 100%;
+        }
+    .wrapper {
+        height: 100%;
+    }
     
-}
-.text {
-    color: white;
-}
-.button1 {       
-    background: violet;
-        color: blue;
-        padding: 10px 20px;
-        font-size: 1.3rem;
-        border: none;
-        border-radius: 38px;
-        text-decoration: none;
-        cursor: pointer;
-        transition: all 0.5s ease-out;
-        }
-        .button2 {       
-    background: blue;
-    margin-top: 20px;
-        color: violet;
-        padding: 10px 20px;
-        font-size: 1.3rem;
-        border-color: violet;
-        border-radius: 38px;
-        text-decoration: none;
-        cursor: pointer;
-        transition: all 0.5s ease-out;
-        }
-
-    </style>
+    .main {
+       display: block;
+            background: blue;
+            margin: 40px;
+            padding: 40px;
+            width: 350px;
+            height: 800px;
+            border-radius: 20px;
+            justify-content: center;
+            
+    }
+    .header {
+        margin-top: 250px;
+        color: white;
+        font-size: 4rem;
+        text-align: left;
+        
+    }
+    .text {
+        color: white;
+    }
+    .button1 {  
+        margin-top: 20px;     
+        background: violet;
+            color: blue;
+            padding: 10px 20px;
+            font-size: 1.3rem;
+            border: none;
+            border-radius: 38px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.5s ease-out;
+            }
+            .button2 {       
+        background: blue;
+        margin-top: 20px;
+            color: violet;
+            padding: 10px 20px;
+            font-size: 1.3rem;
+            border-color: violet;
+            border-radius: 38px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.5s ease-out;
+            }
+    
+        </style>
+<body>
+    
     <div class="wrapper">
         <div class="main">
         <h1 class="header">
@@ -71,7 +83,7 @@
         
         <br>
             <button class="button2" onclick="toggleMenu()">Sign in</button>
-       >
+       
     </div>
 </body>
 </html>
