@@ -16,12 +16,15 @@
         body,
         .wrapper {
             height: 100%;
-        }    
+        } 
+        body {
+            
+        }   
     .main {
        display: block;
             background: blue;
             margin: 40px;
-            padding: 40px;
+            padding: 20px;
             width: 350px;
             height: 800px;
             border-radius: 20px;
@@ -64,12 +67,14 @@
             transition: all 0.5s ease-out;
             font-weight: 700;
             }
-            .image {
-                
-            }
+          img {
+            height: 100px;
+            width: 300px;
+        margin-top: 10px;
+          }
     
         </style>
-<body>
+    <body>
     
     <div class="wrapper">
         <div class="main">
@@ -84,9 +89,11 @@
         
         <br>
             <button class="button2" onclick="toggleMenu()">Sign in</button>
-       <div class="image">
-        <img src="img/PngItem_52405.png">
-       </div>
+         <div class="picture">
+         <img src="img/PngItem_52405.png">   
+        </div>           
+
     </div>
+    
 </body>
 </html>
