@@ -1,0 +1,21 @@
+img {
+width: 200px;
+height: 200px;
+}
+
+p {
+    color: green;
+    font-size: 28px;
+    display: inline;
+}
+/* .paragraph { 
+    color: red;
+}*/
+
+#p2 {
+    color: blue;
+}
+
+.kartinka {
+    display: block;
+}
