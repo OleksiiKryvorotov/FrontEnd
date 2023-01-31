@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0 10px;
+    padding-bottom: 30px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: cadetblue;
+}
+
+h1 {
+    margin-bottom: 80px;
+}
+
+.post_block {
+    border: 2px solid silver;
+    padding: 5px 0 5px 5px;
+    margin: 25px 0;
+    background-color: azure;
+    width: 700px;
+}
+
+.post_block p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.post_block a {
+    text-decoration: none;
+    color: green;
+    font-size: 28px;
+    display: block;
+    text-align: center;
+}
+
+.post_block img {
+    width: 600px;
+}
+
+.post_block_3 h2 {
+    color: cyan;
+}
+
+.social_link {
+    margin-top: 5px;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.social_link img {
+    width: 50px;
+}
+
+
+
+
+/*div {
+    color: #2f24c2; 
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: Georgia, 'Times New Roman', Times, serif;   
+    /*border: 2px dotted green;*/
+   /*border-width: 10px;
+    border-style: groove;
+    border-color: #b7da0a;
+    /*padding: 20px 10px 5px 5px; /*внутренние отступы*/
+    /*margin: 30px 10px 5px 5px;; /*внешний отступ*/
+   /* padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 3px;
+
+    margin-top: 40px;
+    margin-right: 30px;
+    margin-bottom: 2px;
+    margin-left: 1px;
+        
+}
+
+
+
+
