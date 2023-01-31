@@ -1,0 +1,105 @@
+ol {
+    list-style: upper-roman;
+}
+
+ul {
+    list-style: lower-latin;
+}
+ /* table {  */
+    /* border-collapse: collapse; */
+ /* } */
+ table {
+    margin-bottom: 50px;
+ } 
+ 
+ table tr td {
+    text-align: center;
+}
+
+table, tr, td {
+    border: 2px solid yellowgreen;
+    border-collapse: collapse;
+    
+}
+
+/* .gray-row {
+    background-color: gainsboro;
+} */
+
+/* table tr:first-child {
+    background-color: gray;
+    color: white;
+} */
+/* table tr:last-child {
+    background-color: gray;
+   color: white;
+    
+} */
+/* table tr:nth-child(5) {
+    background-color: blue;
+    color: white;
+} */
+
+/* table tr:nth-child(2n) {
+    background-color: blue;
+    color: white;
+}
+table tr:nth-child(2n+1) {
+    background-color: green;
+    color: white;
+} */
+/* table tr:nth-child(6n-5) {
+    background-color: green;
+    color: white;
+}
+
+table tr:nth-child(6n-4) {
+    background-color: red;
+    color: white;
+}
+table tr:nth-child(6n-3) {
+    background-color: blue;
+    color: white;
+}
+table tr:nth-child(6n-2) {
+    background-color: rgb(157, 215, 41);
+    color: white;
+}  
+table tr:nth-child(6n-1) {
+    background-color: rgb(182, 31, 159);
+    color: white;
+}  
+table tr:nth-child(6n) {
+    background-color: black;
+    color: white;
+}    */
+
+
+/* ШАХМАТЫ */
+table tr:nth-child(odd) td:nth-child(even), 
+table tr:nth-child(even) td:nth-child(odd) {
+    background-color: black;
+    color: white;
+}
+/* ЕСли надо закрасить первые 5 строк */
+/* table tr:nth-child(-n+5) {
+    background-color: black;
+    color: white;
+} */
+.button {
+    text-decoration: none;
+    background-color: rgb(190, 216, 196);
+    color: rgb(28, 18, 217);    
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    
+}
+
+
+
+
+
+
