@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header nav {   
+    display: flex;
+    padding: 15px 70px;
+    justify-content: space-between;
+    background-color:  #1ABC9C;
+    align-items: center;
+    
+}
+
+header nav .nav-links a {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+header nav .nav-links a:not(:last-child) {
+    margin-right: 20px;
+}
+
+header nav .social-links a:not(:last-child) {
+    margin-right: 20px;
+}
+
+header .about-us {
+    display: flex;
+}
+
+header .about-us div {
+    width: 50%;
+}
+
+header .about-us div:first-child img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+header .about-us div:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 62px;
+}
+
+header .about-us div:last-child p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+header .about-us div:last-child h2 {
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
