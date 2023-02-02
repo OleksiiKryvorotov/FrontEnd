@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 70%;
+    max-width: 1200px;
+    height:  1100px;
+    border: 1px solid green;
+    padding: 20px;   
+    margin: 20px auto;
+    background-color: rgb(232, 228, 222, 0.5);
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.currencies {
+margin-left: 30px;
+
+}
+
+li {
+    margin: 5px;    
+}
+
+table {
+width: 70%;
+height: 3%;
+}
+.head {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+table tr td {
+    padding: 10px;
+    text-align: center;
+}
+
+table, tr, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    
+}
