@@ -3,14 +3,14 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 .main {
-    background-image: url("../media/Rectangle.png");
-    display: flex;  
-    margin: 0 auto;
-    padding-top: 122px;
-    padding-bottom: 140px;
+    background-image: url("../media/rectangle.png");
+    display: flex;
     color: white;
     padding: 0 405px;
+    padding-top: 122px;
+    padding-bottom: 140px;
 }
 
 .main .contacts h1 {
@@ -20,10 +20,11 @@
 }
 
 .main .contacts p {
-    font-family: 'Lato', sans-serif;
     font-size: 18px;
+    font-family: 'Lato', sans-serif;
 }
-.message-form {
+
+.message-form form {
     display: flex;
     flex-direction: column;
 }
@@ -31,13 +32,13 @@
 .message-form form .name-inputs {
     display: flex;
     margin-bottom: 35px;
-    }
+}
 
-.message-form .name-inputs input {
-        padding-bottom: 15px;
-    }
+.message-form form .name-inputs input {
+    padding-bottom: 15px;
+}
 
-.message-form form .name-inputs>:not(:last-child) {
+.message-form form .name-inputs>div:not(:last-child) {
     margin-right: 30px;
 }
 
@@ -46,19 +47,21 @@
     font-family: 'Lato', sans-serif;
 }
 
-.message-form form input { 
-    background-color: transparent; 
-    border:  none;
+.message-form form input {
+    background-color: transparent;
+    border: none;
 }
+
 .message-form form textarea {
-    /* background-color: transparent; */
-    border:  none;
-} 
+    background-color: transparent;
+    border: none;
+}
 
-.message-form form input:focus-visible {  
+.message-form form input:focus-visible {
     outline: none;
 }
 
-.message-form form textarea:focus-visible {  
+.message-form form textarea:focus-visible {
     outline: none;
 }
+

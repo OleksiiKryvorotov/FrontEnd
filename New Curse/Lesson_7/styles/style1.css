@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 30px;
+}
+
+.container {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.inner {
+    width: 50px;
+    height: 50px;
+    background-color: brown;
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid black;
+    /* top: 20px;
+    right: 20px; */
+    /* right: 50%;    
+    top: 50%; */
+    /*сдвиг вправо по оси X, сдвиг вверз по оси Y
+    с минусом, т.к. ось Y направлена по умол. вниз!*/
+    /* transform: translate(50%, -50%); */
+
+
+}
+/*Псевдоклассы!*/
+.inner:nth-child(1) {
+/* top: 10px;
+left: 10px; */
+top: 10px;
+left: 10px;
+z-index: 40;
+
+}
+.inner:nth-child(2) {
+    /* top: 10px;
+    right: 10px; */
+    top: 15px;
+left: 15px;
+z-index: 30;
+}
+.inner:nth-child(3) {
+    /* bottom: 10px;
+    right: 10px; */
+    top: 20px;
+left: 20px;
+z-index: 20;
+}
+.inner:nth-child(4) {
+    /* bottom: 10px;
+    left: 10px; */
+    top: 25px;
+left: 25px;
+z-index: 10;
+}
