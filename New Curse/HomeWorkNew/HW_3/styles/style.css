@@ -15,14 +15,16 @@ body {
     align-items: center;
     padding: 40px;    
     width: 100%;
+    
+    
 }
 
 form {
-    border: 1px solid black;
-    border-radius: 5px;
-    width: 420px;
+    border: 1px solid white;
+    border-radius: 25px;
+    width: 420px;        
+    box-shadow: 5px 5px 38px rgb(131, 128, 128);
     
-    box-shadow: 5px 5px 20px rgb(131, 128, 128);
 
 }
 
@@ -31,16 +33,15 @@ form {
     background-color: white;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    /* padding: 40px;
-    margin: 32px; */
+    align-items: center;    
     margin-bottom: 24px;
+    position: relative; 
 }
 
 h1 {
 font-size: 28px;
 font-weight: 800;
-margin: 40px 32px 24px 32px;
+margin: 30px 32px 24px 32px;
 padding-right: 182px;
 
 
@@ -63,10 +64,40 @@ p {
     width: 356px;
     height: 48px;
     font-size: 12px;
-    margin-bottom: 24px;
+    margin: 24px;
     color: rgb(175, 175, 175);    
 }
 
+.mail {
+    border: 1px solid #FFE44D;
+}
+
 button {
-    
+   
+width: 356px;
+height: 48px;
+margin: 4px;
+border: 1px solid gray;
+border-radius: 55px;
+font-size: 16px;
+font-weight: 700;   
+cursor: pointer; 
+}
+
+.reg {
+    background-color: #FFE44D;    
+}
+
+
+.close-button { 
+    background-color: white;  
+    color: black;
+    border: 1px solid white;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;    
 }
