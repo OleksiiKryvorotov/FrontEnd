@@ -28,12 +28,12 @@
 // console.log(typeof name) // string
 // console.log(typeof 5) // number
 
-// const r = 12
-// const g = 43
-// const b = 14
+const r = 12
+const g = 43
+const b = 14
 
-// console.log("rgb(" + r + ", " + g + ", " + b + ");") //concatenation
-// console.log(`rgb(${r}, ${g}, ${b})`) //interpolation
+console.log("rgb(" + r + ", " + g + ", " + b + ");") //concatenation
+console.log(`rgb(${r}, ${g}, ${b})`) //interpolation
 
 //матем. операции:
 const value_1 = 13
