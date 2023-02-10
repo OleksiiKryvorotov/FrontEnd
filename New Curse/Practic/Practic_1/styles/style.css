@@ -1,0 +1,29 @@
+
+
+body {
+    position: absolute;
+}
+
+header {
+    background-color: red;
+    position: sticky;
+}
+
+main {
+    background-color: yellow;
+}
+
+aside {
+    background-color: green;
+    
+}
+
+footer {
+    background-color: black;
+    color: white;
+    /* position: absolute; */
+    top:200px;
+    left: 100px;
+    bottom: 50px;
+    right: 30px;
+}
