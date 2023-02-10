@@ -17,9 +17,9 @@
 // console.log(Number("a"))
 // console.log(typeof(NaN));
 
-// Програма введенный возраст в минутах:
-// const age = prompt("Writte your age");
-// console.log("Your age in min - " + age * 525960);
+//Програма введенный возраст в минутах:
+const age = prompt("Writte your age");
+console.log("Your age in min - " + age * 525960);
 
 //Прграмма возв. в квадрат введенное число:
 // const number = prompt("Writte your number");
@@ -31,38 +31,38 @@
 
 // console.log(`num_1 + num_2 = ${+num_1 + +num_2}`);
 
-const a ="2"
-const b =2
+// const a ="2"
+// const b =2
 
-if (a == b) { //автом. стр. превращ. в число здесь
-    console.log("a == b")
-} else {
-    console.log("a != b");
-} 
+// if (a == b) { //автом. стр. превращ. в число здесь
+//     console.log("a == b")
+// } else {
+//     console.log("a != b");
+// } 
 
-if (a>b) {
-    console.log("a больше b");
-} else {
-    console.log("a меньше b");
-}
+// if (a>b) {
+//     console.log("a больше b");
+// } else {
+//     console.log("a меньше b");
+// }
 
-if (a <= b) {
-    console.log("a меньше или равно b");
-} else {
-    console.log("a больше или равно b");
-}
+// if (a <= b) {
+//     console.log("a меньше или равно b");
+// } else {
+//     console.log("a больше или равно b");
+// }
 
-if (a != b) {
-    console.log("a не равно b");
+// if (a != b) {
+//     console.log("a не равно b");
     
-} else {
-    console.log("a равно b");
-}
+// } else {
+//     console.log("a равно b");
+// }
 
-if (a !== b) {
-    console.log("тип a не равно b");
+// if (a !== b) {
+//     console.log("тип a не равно b");
     
-} else {
-    console.log("тип a равно b");    
-}
+// } else {
+//     console.log("тип a равно b");    
+// }
 
