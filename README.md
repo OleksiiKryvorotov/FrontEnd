@@ -9,4 +9,4 @@ Maket3    https://oleksiikryvorotov.github.io/FrontEnd/Classwork/November2022/Pr
 HW_1  https://oleksiikryvorotov.github.io/FrontEnd/New%20Curse/HomeWorkNew/HW_1/index.html
 
 
-HW_3  https://oleksiikryvorotov.github.io/FrontEnd/New%20Curse/HomeWorkNew/HW_3/
+HW_3 https://oleksiikryvorotov.github.io/FrontEnd/New%20Curse/HomeWorkNew/HW_3/
