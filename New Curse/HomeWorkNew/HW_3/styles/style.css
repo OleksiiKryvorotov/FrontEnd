@@ -14,9 +14,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 40px;    
-    width: 100%;
-    
-    
+    width: 100%;   
 }
 
 form {
@@ -24,8 +22,6 @@ form {
     border-radius: 25px;
     width: 420px;        
     box-shadow: 5px 5px 38px rgb(131, 128, 128);
-    
-
 }
 
 .form-content {
