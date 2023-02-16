@@ -1,3 +1,4 @@
+// DOM - Document object model
 // const pValue = document.querySelector("p")
 // console.log(pValue.innerText)
 // pValue.innerText = "Hello world"
@@ -58,17 +59,30 @@
 
 //--проитерировать (пройтись циклом по всем э-там) массив paragraphs, создать для каждого э-та массива тег p, добавть туда содержимое э-та и потом этот э-т добавить в div с классом main------------------------------------------------
 
-const div = document.querySelector(".main")
+// const div = document.querySelector(".main")
+
+// const paragraphsText = ["Day1", "Day2", "Day3", "Day4"]
+
+// for (let index = 0; index < paragraphsText.length; index++) {
+//     const p = document.createElement("p")
+//     p.innerText = paragraphsText[index]
+//     // div.prepend(p)// - до
+//     div.append(p)    // - после
+// }
+
+
+//-- Написать ф-цию, которая принимает текст как аргумент, создает параграф с этим текстом и возв. этот параграф, в цикле сделать div.append(p)- новый параграф-----------------------------------
+
 
 const paragraphsText = ["Day1", "Day2", "Day3", "Day4"]
 
+const div = document.querySelector("div.main")
+
 for (let index = 0; index < paragraphsText.length; index++) {
     const p = document.createElement("p")
-    p.innerText = paragraphsText[index]
-    // div.prepend(p)// - до
-    div.append(p)    // - после
+    p.innerText = paragraphsText[index] 
+    div.append(p)   
 }
-
 
 
 
