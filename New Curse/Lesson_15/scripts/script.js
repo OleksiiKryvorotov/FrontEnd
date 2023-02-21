@@ -171,19 +171,22 @@
 const images = ['https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg', 'https://cdn.pixabay.com/photo/2014/02/27/16/10/flowers-276014_960_720.jpg', 'https://cdn.pixabay.com/photo/2012/03/01/00/55/flowers-19830_960_720.jpg'];
 
 const thumbnailsDiv = document.querySelector("#thumbnails")
-const previewDiv = document.querySelector("#preview")
-const newImgElem = document.createElement("img")
-previewDiv.append(emptyImgElem)
 
+const previewDiv = document.querySelector("#preview")
+const emptyImgElem = document.createElement("img")
+previewDiv.append(emptyImgElem)
+// previewDiv.style = "background-color: black"
+previewDiv.setAttribute("style", "background-color: black; width: 50px")
 for (let index = 0; index < images.length; index++) {
-    const newImgElem  = document.createElement("img")
+    const newImgElem = document.createElement("img")
     newImgElem.setAttribute("src", images[index])
-    newImgElem.addEventListener("click", function() {
+    newImgElem.addEventListener("click", function () {
+        // emptyImgElem.setAttribute("src", newImgElem.src)
         emptyImgElem.setAttribute("src", images[index])
     })
-    thumbnailsDiv.append(newImgElem)    
- }
-// посмотретьв ГИТЕ у препода!--------------------
+    thumbnailsDiv.append(newImgElem)
+}
+//----------------------------------------------
 
 
  
