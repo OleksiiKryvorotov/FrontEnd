@@ -12,14 +12,33 @@
 </head>
 <body>
     <h1>Todo list</h1>
-    <!-- Добавить форму и внутри форми один инпут c типом текст для ввода названия нашей задачи и одна кнопочка с текстом (Add) -->
     <form>
         <input id="new_item_input" type="text" placeholder="Add new todo item">
+        <input type="date" id="new_date_input">
         <button id="add_item_button">Add</button>
     </form>
     <ul id="todo_list">
-       
+        <li data-date="2022-02-27">
+            <input id="item_1" type="checkbox">
+            <label for="item_1">Lorem ipsum dolor sit amet consectetur</label>
+            <button>Remove</button>
+        </li>
+        <li data-date="2022-02-26">
+            <input id="item_2" type="checkbox">
+            <label for="item_2">2</label>
+            <button>Remove</button>
+        </li>
+        <li data-date="2022-02-24">
+            <input id="item_3" type="checkbox">
+            <label for="item_3">3</label>
+            <button>Remove</button>
+        </li>
     </ul>
 </body>
-    <script src="./scripts/script.js"></script>
+    <script src="scripts/script.js"></script>
 </html>
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+Terms
+Privacy

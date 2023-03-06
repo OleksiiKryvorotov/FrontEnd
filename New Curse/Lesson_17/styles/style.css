@@ -18,7 +18,7 @@ form {
     margin-bottom: 10px;
 }
 
-form #new_item_input {
+form #new_item_input, form #new_date_input  {
     margin-right: 10px;
     padding: 5px;
     border: 1px solid #ccc;
@@ -52,6 +52,7 @@ form #add_item_button:hover {
 
 #todo_list {
     list-style: none;
+    padding: 10px;
 }
 
 #todo_list li {
@@ -59,6 +60,64 @@ form #add_item_button:hover {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    border-radius: 5px;
+    background-color: #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+#todo_list li::after {
+    content: attr(data-date);
+    font-size: 8px;
+    position: absolute;
+    right: 0;
+    top: -10px;
+}
+
+/* Добавить стили во время наведения курсором на li (hover) 
+Тень
+сдвиг по оси х - 0
+сдвиг по оси у - 4px
+длина тени - 8px
+цвет тени rgba(0, 0, 0, 0.2);
+сдвиг элемента по вертикали вверх на 5px
+с помощью стиля transform и функции translateY
+*/
+
+/* Добавить плавности к анимации с длительностю на 0,3 секунды и для смени всех стилей. ease
+transition
+*/
+
+#todo_list li:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+
+#todo_list li:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+#todo_list li button {
+    background-color: rgb(69, 69, 69);
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 3px 5px;
+}
+
+#todo_list li label {
+    width: 100%;
+    cursor: pointer;
+}
+
+#todo_list li input {
+    margin-right: 15px;
 }
 
 /* input[type=text] { // tag[attributeName=value]
