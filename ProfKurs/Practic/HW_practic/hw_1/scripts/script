@@ -1,0 +1,13 @@
+const giveMeTheLongestWord = (word) => {
+    let longest = ''
+    for (let i = 0; i < word.length; i++) {
+      if(word[i].length > longest.length) {
+        longest = word[i]
+      }         
+    }
+    return longest
+}
+const arr = ['Oli', 'Done', 'Apple']
+const longest = giveMeTheLongestWord(arr)
+
+console.log(giveMeTheLongestWord(arr))
