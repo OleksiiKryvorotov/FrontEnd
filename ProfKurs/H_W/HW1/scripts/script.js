@@ -18,7 +18,7 @@
 
 // 2. Напишите цикл, который находит среднее арифметическое всех чисел в массиве:
 
-// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+// let numbers = [1, 2, 3, 4, 5]
 // let sum = 0
 
 // for (let i = 0; i < numbers.length; i++) {
@@ -30,12 +30,20 @@
 
 // 3. Напишите цикл, который выводит в консоль таблицу умножения на 5:
 
-// for (let i = 1; i <= 10; i++) {
+// for (let i = 0; i <= 10; i++) {
 //   console.log("5 x " + i + " = " + (5 * i))
 // }
 
 // 4. Напишите цикл, который переворачивает порядок элементов в массиве:
 
+// const array = ['hello', 5, 'h1', 65, false]
+
+// const array_reverse = []
+// for(let i = array.length - 1; i >= 0; i--) {
+//   array_reverse.push(array[i])
+// }
+
+// console.log(array_reverse);
 
 
 
