@@ -102,4 +102,15 @@
 // УМНОЖЕНИЕМ СОЗДАЕМ ДИАПАЗОН, А СЛОЖЕНИЕМ СДВИГАЕМ!!!!!!
 //------------------------------------------------------
 
-// 
+// 7. Написать стрелочная ф-цию, которая принимает массив со строками и формирует новый массив со строками, чья длина превышает 5 символов: ---------------
+const isMaxLength = (arr) => {
+    const result = []
+   for (let i = 0; i < arr.length; i++) {
+      if(arr[i].length > 5) {
+        result.push(arr[i])
+    }     
+   }
+   return result
+}
+const greetings = ['hello', 'hi', 'good morning', 'good afternoon', 'hey']
+console.log(isMaxLength(greetings));
