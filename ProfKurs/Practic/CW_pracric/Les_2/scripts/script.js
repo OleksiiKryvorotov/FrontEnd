@@ -116,17 +116,17 @@
 // console.log(c(3, 10, 10));
 
 //---напишите функцию которая в качестве аргумента принимает массив строк и возвращает нам число равное длинне массива------------------------------------------
-const arrayStrings = ["Hello", "Goodbye"]
-const names = ["Anna", "Lesha", "Pavel"]
-const ages = ["18", "23", '35', '46']
+// const arrayStrings = ["Hello", "Goodbye"]
+// const names = ["Anna", "Lesha", "Pavel"]
+// const ages = ["18", "23", '35', '46']
 
-function  giveArrayLength(array) {
-   return array.length  
-}
-console.log(giveArrayLength(arrayStrings),
-giveArrayLength(names),
-giveArrayLength(ages)
-)
+// function  giveArrayLength(array) {
+//    return array.length  
+// }
+// console.log(giveArrayLength(arrayStrings),
+// giveArrayLength(names),
+// giveArrayLength(ages)
+// )
 
 //-----------------------------------------------------
 

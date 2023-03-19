@@ -53,5 +53,15 @@
 // console.log(getElementByTag("span"));
 //-------------------------------------------------------------------
 
+// 5. Создать объект с названием calculation. У этого объекта должна быть функция squarPow, которая возводит число в куб cubePow и округляет downNumber. Каждая функция должна принимать один аргумент:
 
+// const calculation = {
+//   squarPow: a =>  Math.pow(a, 2),  
+//   cubePow: (a) =>    Math.pow(a, 3),
+//   downNumber: (a) =>    Math.floor(a)  
+//   }
 
+// console.log(calculation.squarPow(3));
+// console.log(calculation.cubePow(3));
+// console.log(calculation.downNumber(3));
+// КРУТО! Если один аргумент у ф-ции, то можно кратко....
