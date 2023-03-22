@@ -11,7 +11,7 @@
 // const exponent = (a, b) =>
 //       Math.pow(a, b)
 
-// console.log(exponent(4, 6))    
+// console.log(exponent(4, 2))    
 //----------------------------------------------------------------------
 
 // 3.Напишите функцию, которая принимает строку и возвращает ее длину.
@@ -30,30 +30,63 @@
 //----------------------------------------------------------------------
 
 // 5.Напишите функцию, которая принимает массив чисел и возвращает новый массив, в котором все числа умножены на 2.
+// const createNewArray = arr => {
+//     const result = []
+//     for (let i = 0; i < arr.length; i++) {
+//        result.push(arr[i] * 2)        
+//     }
+//     return result
+// }
 
-// const arrayNumbers = [1, 5, -7, -88, 9, 44, 15, 35, -5, 10]
-
-
-
-
+//   console.log(createNewArray([1, 5, -7, -88, 9, 44, 15, 35, -5, 10]))
 
 
 //----------------------------------------------------------------
 
-// 6.Напишите функцию, которая принимает массив чисел и возвращает среднее значение.
+// 6.Напишите функцию, которая принимает строку и возвращает новую строку, в которой все гласные заменены на символ '*'.
 
-// const arrayNumbers = [1, 5, -7, -88, 9, 44, 15, 35, -5, 10]
-// const isAverage = (arrayNumbers) => {
-// const sum = 0
+// const changeLetters = str => {
+//     let new_str = '';
+//     for(let i = 0; i < str.length; i++){
+//       if(str[i].toLowerCase() === 'a' || str[i].toLowerCase() === 'e' || str[i].toLowerCase() === 'i' || str[i].toLowerCase() === 'o' || str[i].toLowerCase() === 'u' || str[i].toLowerCase() === 'y') {
+//         new_str += '*'
+//       } else {
+//         new_str += str[i]
+//       }
+//     }
+//     return new_str
+//   }
+  
+//   console.log(changeLetters('hello')); // h*ll*
+//   console.log(changeLetters('GOOD morning')); // G**D m*rn*ng
 
-// for (let index = 0; index < arrayNumbers.length; index++) {
-//     sum += arrayNumbers[index]    
-// }
-// }
 
-// const average = sum / arrayNumbers.length
-// console.log(isAverage(arrayNumbers));
 
+//---------------------------------------------------------------
+
+// 7.Напишите функцию, которая принимает массив чисел и возвращает среднее значение.
+
+const arrayNumbers = [1, 5, -7, -88, 9, 44, 15, 35, -5, 15]
+const isAverage = (arrayNumbers) => {
+const sum = 0
+
+for (let index = 0; index < arrayNumbers.length; index++) {
+    sum += arrayNumbers[index]    
+}
+}
+
+const average = sum / arrayNumbers.length
+console.log(isAverage(arrayNumbers));
+
+// --- или так: 
+// const getAvgNum = arr => {
+//     for(let i = 0; i <arr.length; i++) {
+//         sum =+ arr[i]
+//     }
+//     return sum / arr.length
+//   }
+
+//   console.log(getAvgNum([1, 5, -7, -88, 9, 44, 15, 35, -5, 15]))
 //---------------------------------------------------------------
 
 

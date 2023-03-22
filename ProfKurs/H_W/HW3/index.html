@@ -8,6 +8,117 @@
 </head>
 <body>
     
-    <script src="./scripts/script.js"></script>
+    <script>
+
+        // ДЗ (for и forEach) =============================================
+
+// 1. Дан массив с числами. Вычислить сумму элементов массива
+
+    // 1-й способ (for):
+
+    // const nums = [21, 5, 10, 40, 3]
+    // let sumNums = 0
+    // for (let i = 0; i < nums.length; i++) {
+    //     sumNums += nums[i]      
+    // }
+
+    // console.log(sumNums)
+
+    //  // 2-й способ (forEach):
+
+    //  const numForEach = [21, 5, 10, 40, 3]
+    //  let sum = 0
+    //  numForEach.forEach(a => sum += a)
+
+    //  console.log(sum);
+// ============================================================================  
+
+// 2. Дан массив со строками. Сформировать новый массив, в который попадут все строки из исходного массива, длина которых больше 7 символов
+
+     // 1-й способ (for):
+     
+    //     const isMaxLenght = (arr) => {
+    //       const res = []
+    //         for (let i = 0; i < arr.length; i++ ) {                
+    //           if(arr[i].length > 7) {
+    //             res.push(arr[i])
+    //       }         
+    //     }
+    //       return res
+    // }
+    //     const greetings = ['hello', 'hi','Deep Purple', 'good morning', 'good afternoon', 'hey']
+    //     console.log(isMaxLenght(greetings));
+    
+    // 2-й способ (forEach):
+
+    // const greetings_forEach = ['hello', 'hi','Deep Purple', 'good morning', 'good afternoon', 'hey']
+    //   const result =[]
+    //   greetings_forEach.forEach(a => a.length > 7 ? result.push(a) : '')
+
+    //   console.log(result);
+//================================================================================
+
+// 3. Дан массив со строками. Сформировать новый массив, в который попадут все строки из исходного массива, которые начинаются на букву D или d
+
+// 1-й способ (for):
+
+    // const str = ['Danke', 'hi','Deep Purple', 'good morning', 'doom', 'hey']
+
+    // const firstDdLetters = []
+    //       for (let i = 0; i < str.length; i++) {
+    //         const first_Dd = str[i][0]
+    //           if(first_Dd === 'D' || first_Dd === 'd') {
+    //             firstDdLetters.push(str[i])
+    //         }
+    //       }
+    //       console.log(firstDdLetters)
+
+     // 2-й способ (forEach):
+
+    //  const d_strings = [];
+    //  strings.forEach(el => el[0].toLowerCase() === 'd' ? d_strings.push(el) : '')
+
+    //  const str = ['Danke', 'hi','Deep Purple', 'good morning', 'doom', 'hey']
+    //  console.log(d_strings);
+
+//=====================================================================================          
+
+// 4. Дан массив с числами. Сформировать новый массив, в который попадут все числа из исходного массива, возведенные в 3 степень
+
+// 1-й способ (for):
+
+// const numbers =[21, 5, 10, 40, 3]
+
+// const numbers_pow0 = []
+// for(let i =0; i < numbers.length; i++)
+// numbers_pow0.push(numbers[i] ** 3)
+
+// console.log(numbers_pow0)
+
+//--------------------------------------------------------------------------
+
+// 2-й способ (forEach): 
+
+// const numbers =[21, 5, 10, 40, 3]
+
+// const numbers_pow = [];
+// numbers.forEach(el => numbers_pow.push(el ** 3))
+
+// console.log(numbers_pow) 
+     
+//-------------------------------------------------------------------------
+
+
+
+
+// 5. Дан массив с числами. Сформировать новый массив, в который попадут все числа из исходного массива, заканчивающиеся на 7
+
+// 2-й способ (forEach): надо испраить - делал учитель!!!
+// const numbers_7 = [];
+// numbers.forEach(el => el % 10 === 7 ? numbers_7.push(el) : '');
+
+//============================================================================
+
+    </script>
 </body>
 </html>

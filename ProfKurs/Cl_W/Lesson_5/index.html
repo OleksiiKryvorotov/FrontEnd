@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// ===== МЕТОДЫ МАССИВОВ: =============================
+// ---Методы - это всегда функции!!!!!!!!!!!!! поэтому в конце всегда скобки надо! -------------
+
+// - forEach() - ничего не возвращает (undefined), выполняет указанную ф-цию один раз для каждого эл-та массива.
+
+// - map - выполняет указанную ф-цию один раз и возвр. всегда весь массив целиком
+
+// - "filter" возвр. новый массив, в который попадают те эл-ты, которые прошли указанную проверку, т.е. не надо никаких "иначе", "то" (без " : ") 
+//--------------------------------------------------
+
+// numbers.push(6) // добавляет эл-т в конец массива
+// numbers.pop() // удаляет эл-т из конца массива
+// numbers.unshift(0) // добавляет эл-т в начало массива
+// numbers.shift() // удаляет эл-т из начала массива
+
+// console.log(numbers)
+
+//===========================================================
+       
+
+// 4 --- (ДЗ). Дан массив с числами. Сформировать новый массив, в который попадут все числа из исходного массива, возведенные в 3 степень -------------------------
+
+// 1-й способ (for):
+// Импертаивный подход - объясняет программе КАК сделать? !!!!!!!!!!!!
+// const numbers =[21, 5, 10, 40, 3]
+
+// const numbers_pow0 = []
+// for(let i =0; i < numbers.length; i++)
+// numbers_pow0.push(numbers[i] ** 3)
+
+// console.log(numbers_pow0)
+
+//-------------------------------------------------
+
+// 2. методом forEach:
+// const numbers =[21, 5, 10, 40, 3]
+
+// const numbers_pow = [];
+// numbers.forEach(el => numbers_pow.push(el ** 3))
+
+// console.log(numbers_pow)
+
+//====================================================
+
+// 3. --- (ДЗ) методом map:
+// Декларативный подход - объясняет программе ЧТО сделать? !!!!!!!!!!!! ---------------------------
+
+// const numbers =[21, 5, 10, 40, 3]
+
+// const numbers_pow2 = numbers.map(el => el ** 3) 
+
+// console.log(numbers_pow2)
+
+//======================================================
+
+// 1. Сформир. новый массив, в который попадут все последние цифры чисел исх. массива: ----------
+
+// Метод forEach:
+
+// const numbers =[4, 6, 1, 17, 9, 15, 27, 43, 7]
+
+// const lastNumbers = []
+// numbers.forEach(el => lastNumbers.push((el % 10)))
+
+// console.log(lastNumbers)
+// //---------------------------------------------------
+//  метод map:
+
+// const numbers1 =[4, 6, 1, 17, 9, 15, 27, 43, 7]
+// const lastNumbers1 = numbers1.map(el => el % 10)
+
+// console.log(lastNumbers1)
+
+//====================================================
+
+// 3. Сформировать новый массив, в который попадут все элементы из исходного массива. Если длина элемента меньше 6 (<), то добавить к этой строке 1 => ['hello1', 'apple1', 'orange', 'good morning', 'danke1', 'duck1', 'dinosaure'] ------------------------------------
+
+// Метод "forEach":
+
+// const str = ['hello', 'apple', 'orange', 'good morning', 'danke', 'duck', 'dinosaure']
+
+// const str_1 = []
+// str.forEach(el => el.length < 6 ? str_1.push(el + 1) : str_1.push(el))
+// console.log(str_1);
+
+// метод "map":
+
+// const strMap = ['hello', 'apple', 'orange', 'good morning', 'danke', 'duck', 'dinosaure']
+
+
+// const str_2 = strMap.map(el => el.length <6 ? el + 1 : el)
+// console.log(str_2);
+
+//=======================================================
+
+// 4. Дан массив с числами. Сформировать новый массив, в который попадут все числа из исходного массива. Если число четное, то поделить его на 2, а если нечетное - умножить на 2
+
+// Метод "forEach":
+
+// const numbers =[4, 6, 1, 17, 9, 15, 27, 43, 7]
+// const num_1 = []
+// numbers.forEach(el => num_1.push(el % 2 === 0 ? el / 2 : el *2))
+
+// console.log(num_1)
+
+//  метод "map":
+
+// const numbers_map =[4, 6, 1, 17, 9, 15, 27, 43, 7]
+// const num_map = numbers.map(el => el % 2 === 0 ? el / 2 : el * 2)
+
+// console.log(num_map)
+
+//===========================================================
+
+// 5. Дан массив с разными типами данных. Сформировать новый массив - если элемент является числом, то заменить его на строку 'number' => ['number', 'hello', true, 'hi', 'number', 'number', false] используя оператор "typeof":
+
+// Метод "forEach":
+
+// const arr = [3, 'hello', true, 'hi', 7, 10, false]
+
+// const newArr = []
+// arr.forEach(el => {newArr.push(typeof el === 'number' ? 'number' : el)})
+
+// console.log(newArr)
+
+// метод "map":
+
+// const arrMap = [3, 'hello', true, 'hi', 7, 10, false]
+
+// const changed_arr = arrMap.map(el => typeof el === 'number' ? 'number' : el)
+
+// console.log(changed_arr);
+
+//===============================================================
+
+// 6. Дан массив с числами. Сформировать новый массив - если число меньше 0, то вернуть в массив 'negative'. А если больше 0 - 'positive' => ['positive', 'negative', 'positive', 'negative', 'negative', 'positive']
+
+// метод "map":
+
+// const nums = [3, -9, 100, -7, -4, 33];
+// const result = nums.map(el => el < 0 ? 'negative' : 'positive')
+
+// console.log(result)
+
+//=============================================================
+
+
+// ----- МЕТОД filter -------------------------------------------
+
+// метод "filter" возвр. новый массив, в который попадают те эл-ты, которые прошли указанную проверку, т.е. не надо никаких "иначе", "то" (без " : ") ----------------------------------
+
+// 3. (ДЗ) Дан массив со строками. Сформировать новый массив, в который попадут все строки из исходного массива, которые начинаются на букву D или d
+
+// Метод "forEach":
+
+// const strings1 = ['hello', 'apple', 'orange', 'good morning', 'danke', 'duck', 'dinosaure'];
+
+// const d_strings = [];
+// strings1.forEach(el => el[0].toLowerCase() === 'd' ? d_strings.push(el) : '');
+
+// console.log(d_strings)
+
+//  Метод "filter":
+
+// const filtered_strings = strings1.filter(el => el[0].toLowerCase() === 'd');
+
+// console.log(filtered_strings)
+
+//===================================================================
+
+// 8. Дан массив со строками. Сформировать новый массив, в который попадут все строки из исходного массива, длина которых больше 7 символов
+
+// Метод "filter":
+
+// const strings1 = ['hello', 'apple', 'orange', 'good morning', 'danke', 'duck', 'dinosaure']
+
+// const filtered_strings1 = strings1.filter(el => el.length > 7)
+
+// console.log(filtered_strings1)
+
+//==================================================================
+
+// 9. Дан массив строк. Используйте метод map для преобразования каждой строки в новую строку, которая будет содержать ту же строку в верхнем регистре
+
+// const strings1 = ['hello', 'apple', 'orange', 'good morning', 'danke', 'duck', 'dinosaure']
+
+// const uppercaseStrings = strings1.map(el => el.toUpperCase())
+
+// console.log(uppercaseStrings)
+
+//===================================================
+
+// 10. Напишите функцию, которая принимает массив чисел и возвращает новый массив чисел, в котором каждое число возведено в квадрат.
+
+
+
+
+    </script>
+</body>
+</html>
