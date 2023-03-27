@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     
+// 1. Написать функцию, которая принимает массив и возвращает новый массив только со строками длиннее 6 символов и начинающихся на букву 'h'/'H' --------
+    
+//  const greetings = ['hello', 'hello, my friend', 'good morning', 'How are you doing?', 'good afternoon']
+
+//     const getLongStrings = arr => arr.filter(el => el.length > 6 && el[0].toLowerCase() === 'h');
+
+// console.log(getLongStrings(greetings))
+
+//==================================================
+
+// 2. Написать функцию, которая принимает массив с числами и возвращает новый массив с положительными числами, умноженными на 2 -------------------------------
+
+// const numbers = [3, -8, 9, -1, 80, -33]; // [6, 18, 160]
+    
+// const multPosNum  =  numbers.filter(el => el > 0)
+//     .map(el => el * 2)
+
+// console.log(multPosNum)
+
+//======================================================
+
+// ----- ОБЪЕКТЫ --------------------------------------
+// ----- способы задания объектов: ----------
+// const user = {
+//   firstname: 'Nelli',
+//   lastname: 'Efremyan',
+//   age: 28,
+//   active: true,
+//   address: {
+//     country: 'Armenia',
+//     city: 'Yerevan'
+//   },
+//   skills: ['JS', 'SQL']
+// }
+//===========================================================
+
+// 1.Вывести в консчоль имя пользоватея и еще что-нибудь :--------
+// --- 1 спсобоб: ----------------
+// console.log(user.firstname);
+// console.log(user.age);
+// console.log(user.address);
+// console.log(user.skills);
+// // --- а можно и так: --------------
+// console.log(user.firstname, user.age,user.address, user.skills);
+
+// --- 2 спсобоб: ----------------
+
+// console.log(user['firstname']); // редкия случай использования - если назв. ключа состоит из двух слов, но не соединены никак эти слова или назв. ключа стоит в кавычках ----------------
+
+// const key = 'firstname';
+
+// console.log(user.firstname); // 'Nelli'
+// console.log(user[key]); // 'Nelli'
+// console.log(user.key); // undefind
+
+//================================================================
+
+// 2.Написать функцию, которая принимает два аргумента - объект и название ключа. Функция возращает значение по переданному ключу--
+
+// const user = {
+//   firstname: 'Nelli', 
+//   age: 28 
+// }
+
+// const getValue = (obj, key) => obj[key]
+
+// console.log(getValue(user, 'firstname'));
+// console.log(getValue(user, 'age'));
+
+//===============================================================
+
+// 3. Дан массив с пользователями. См ниже ----------------
+
+// const users = [
+//   {
+//     id: 1,
+//     firstname: 'Anton',
+//     age: 28,
+//     active: true
+//   },
+//   {
+//     id: 2,
+//     firstname: 'Irina',
+//     age: 18,
+//     active: true
+//   },
+//   {
+//     id: 3,
+//     firstname: 'Olga',
+//     age: 32,
+//     active: false
+//   },
+//   {
+//     id: 4,
+//     firstname: 'Danila',
+//     age: 14,
+//     active: true
+//   },
+//   {
+//     id: 5,
+//     firstname: 'Ivan',
+//     age: 54,
+//     active: false
+//   }
+// ]
+
+// --- Вывести в консоль все имена пользователей: ---------
+
+// users.forEach(el => console.log(el.firstname))
+
+// --- Вывести в консоль все эл-ты объектов: ---------------
+
+// users.forEach(el => console.log(el))
+
+// --- Ввести в консоль инфо о кажом польз. в формате: 'Name': <name>, age: <age>: ------------------------------------------
+
+// users.forEach(el => console.log(`Name: ${el.firstname}, Age: ${el.age}`))   
+
+
+
+// --- Дестрктуризация (даже не вводим понятие  el !!! ----------
+
+// const { firstname, age } = user // Дестрктуризация!!!!
+
+// console.log(firstname);
+// console.log(age);
+// console.log(address); // не поймет  is not defined
+
+// а если добавить adress в деструкт., то: 
+
+// const { firstname, age, address } = user
+
+// console.log(address);
+// console.log(firstname);
+// console.log(age);
+
+//=====================================================
+
+
+// или так с деструкт.:
+// --- Ввести в консоль инфо о кажом польз. в формате: 'Name': <name>, age: <age>: ------------------------------------------
+
+// users.forEach(el => {
+//     const { firstname, age} = el
+//     console.log(`Name: ${firstname}, Age: ${age}`);
+// })
+
+//============================================================
+
+// --- Деструкт. в одну строчку!!!!!!!!!: ------------------------
+
+// users.forEach(({ firstname, age }) => console.log(`Name: ${firstname}, Age: ${age}`))
+
+// --- а так без деструкт.: -----------------------
+
+// users.forEach(el => console.log(`Name: ${el.firstname}, Age: ${el.age}`))
+
+//=============================================================
+
+// --- Вывести в консоль все навыки польз. - skills - 'JS' 'SQL': -----------
+
+// const user = {
+//   firstname: 'Nelli',
+//   lastname: 'Efremyan',
+//   age: 28,
+//   active: true,
+//   address: {
+//     country: 'Armenia',
+//     city: 'Yerevan'
+//   },
+//   skills: ['JS', 'SQL']  
+// }
+
+// console.log(user.skills); // ['JS', 'SQL']
+// user.skills.forEach(el => console.log(el[0])); // выведет только превый символ эл-та массива J, S
+// console.log(user.skills[0]); // 'JS'
+
+// JS[0] => J
+// SQL[0] => S
+//==========================================================
+
+// --- Сформировать новый массив, в который попадут только совершеннолетние пользователи => [{}, {}, {}, {}] ----
+
+const users = [
+  {
+    id: 1,
+    firstname: 'Anton',
+    age: 28,
+    active: true
+  },
+  {
+    id: 2,
+    firstname: 'Irina',
+    age: 18,
+    active: true
+  },
+  {
+    id: 3,
+    firstname: 'Olga',
+    age: 32,
+    active: false
+  },
+  {
+    id: 4,
+    firstname: 'Danila',
+    age: 14,
+    active: true
+  },
+  {
+    id: 5,
+    firstname: 'Ivan',
+    age: 54,
+    active: false
+  }
+]
+
+// --- через метод filter: -----------------
+
+// const adult_users = users.filter(el => el.age >= 18)
+// console.log(adult_users);
+
+// --- Через деструкт.: --------------------
+
+// const adult_users = users.filter(({ age }) => age >= 18);
+// console.log(adult_users);
+
+// ==========================================================
+
+// --- // 4. Сформировать новый массив, в который попадут только имена пользователей => ['Anton', 'Irina', 'Olga', 'Danila', 'Ivan']
+
+// const name_users = users.map(el => el.firstname);
+// console.log(name_users);
+
+    </script>
+</body>
+</html>

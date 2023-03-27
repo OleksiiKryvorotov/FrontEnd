@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+//      <!-- ДЗ "map" или "filter"! -->
+
+// 1. Напишите функцию, которая принимает массив строк и возвращает новый массив строк, в котором все первые буквы каждого слова написаны заглавными буквами. -->
+
+// const str = ['hello', 'apple', 'orange', 'good morning', 'danke', 'duck', 'dinosaure']
+
+// --- "map": --------------------
+
+
+
+
+//========================================================
+
+// 2. Напишите функцию, которая принимает массив чисел и возвращает новый массив чисел, содержащий только положительные числа. 
+
+// --- "filter": --------------------
+
+// const numbers1 =[4, 6, -1, 17, -9, 15, -27, -43, 7]
+
+// const pos_numbers = numbers1.filter(el => el > 0)
+// console.log(pos_numbers)
+
+// --- "map": --------------------
+
+// const numbers1 =[4, 6, -1, 17, -9, 15, -27, -43, 7]
+
+// const pos_numbers = numbers1.map(el => el > 0 ? el : " ") // или 0
+//  console.log(pos_numbers)
+
+//===========================================================
+
+// 3. Напишите функцию, которая принимает массив чисел и возвращает новый массив чисел, содержащий только нечетные числа. -->
+
+// --- "forEach": --------------------
+
+// const nums = [4, 1, 15, -77, 33, -10, 55, 2]
+
+// const oddNums_forEach = []
+// nums.forEach(el => el % 2 != 0 ? oddNums_forEach.push(el) : '')
+
+// console.log(oddNums_forEach)
+
+// --- "filter": --------------------
+
+// const nums = [4, 1, 15, -77, 33, -10, 55, 2]
+
+// const nums_odd = nums.filter(el => el % 2 !== 0)
+
+// console.log(nums_odd)
+
+// --- "map": --------------------
+
+// const nums = [4, 1, 15, -77, 33, -10, 55, 2]
+
+// const nums_odd = nums.map(el => el % 2 !== 0 ? el : " ")
+
+// console.log(nums_odd)
+
+//=========================================================
+
+// 4. Создайте новый массив, содержащий только элементы исходного массива, которые делятся на три без остатка.
+
+// --- "filter": --------------------
+
+// const nums = [4, 1, 15, -77, 33, -10, 55, 2]
+
+// const nums_div3 = nums.filter(el => el % 3 === 0)
+
+// console.log(nums_div3)
+
+// --- "map": --------------------
+
+// const nums = [4, 1, 15, -77, 33, -10, 55, 2]
+
+// const nums_div3 = nums.map(el => el % 3 === 0 ? el : " ")
+// console.log(nums_div3)
+
+//==========================================================
+
+
+// 5. Создайте новый массив, содержащий только те элементы исходного массива, которые больше чем 10 и меньше чем 20.
+
+// --- "filter": --------------------
+
+// const nums = [4, 13, 15, -77, 33, -10, 55, 12]
+
+// const nums10_20 = nums.filter(el => el > 10 && el < 20)
+
+// console.log(nums10_20)
+
+// --- "map": --------------------
+
+// const nums = [4, 13, 15, -77, 33, -10, 55, 12]
+
+// const nums10_20 = nums.map(el => el > 10 && el < 20 ? el : " ")
+
+// console.log(nums10_20)
+
+//=================================================================
+
+ // 6. Создайте новый массив, содержащий только те элементы исходного массива, которые не являются строками. 
+
+ // --- "filter": --------------------
+
+//  const arr = [3, 'hello', true, 'hi', 7, 10, false] 
+
+// const arrNumber = arr.filter(el => typeof el === 'number')
+
+// console.log(arrNumber)
+
+// --- "map": --------------------
+
+// const arr = [3, 'hello', true, 'hi', 7, 10, false] 
+
+// const arrNumber = arr.map(el => typeof el === 'number' ?  el : " ")
+
+// console.log(arrNumber)
+
+//=============================================================
+
+
+</script>
+</body>
+</html>
