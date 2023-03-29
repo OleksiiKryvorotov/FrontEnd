@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // ========== МЕТОД SORT =========================
+
+    // .sort() - сортирует эл-ты массива, сортирует по умолчанию по первой цифре! Использует Callback ф-цию.
+
+    // const numbers = [33, 1, 7, 3, 56]
+    // numbers
+    // console.log(numbers);
+
+    // если от меньшего к большеиу: ------------------
+    // .sort((a, b) => a - b) 
+    // console.log(numbers); // [1, 3, 7, 33, 56]
+
+    // если от большего к меньшему: ------------------
+    // .sort((a, b) => b - a)
+    // console.log(numbers); // [56, 33, 7, 3, 1]
+
+    // если умляуты всякие или СТРОКИ: ---------------
+
+    // const names = ['Anna', 'Ivan', 'Anton', 'Pavel']
+    // names.sort((a, b) => a.localeCompare(b))
+    // console.log(names); ; // ['Anna', 'Anton', 'Ivan', 'Pavel']
+
+    // names.sort((a, b) => b.localeCompare(a))
+    // console.log(names);  //  ['Pavel', 'Ivan', 'Anton', 'Anna']   
+
+    //=================================================
+
+    // === СОЗДАТЬ КОПИЮ МАССИВА: =====================
+   
+    // 1 спсобо через метод map: -------------------
+
+     // const nums = [5, 32, 334, 25, 58, 85]
+
+    //   const nums_map = nums.map(el => el).sort((a, b) => a - b);
+    //   console.log(nums);
+    //   console.log(nums_map);
+
+    // одинаковые массивы получаются без сортровки, а с сортировкой нет!
+
+    // 2 способ через метод slice: -------------
+
+     // const nums = [5, 32, 334, 25, 58, 85]
+
+    // const nums_slice = nums.slice().sort((a, b) => a - b)
+
+    // console.log(nums_slice);
+
+    // 3 способ через метод spread: -------------
+
+     // const nums = [5, 32, 334, 25, 58, 85]
+
+    //  const nums_spread = [...nums].sort((a, b) => a - b);
+     
+    //  console.log(nums_spread);
+
+    //=================================================
+
+    // ===== МЕТОД .reduce() - возвр. аккумулирующее значение (аналог цикла, но область применения гораздо обширнее!) ======================================
+
+    // если циклом: (сумма эл-ов массива) -----------------------------
+    // const nums = [5, 32, 334, 25, 58, 85]
+
+    // let acc = 0
+    // for (let i = 0; i < nums.length; i++) {
+    //     acc += nums[i]        
+    // }
+    // console.log(acc); //539
+
+    // методом reduce: (сумма эл-ов массива) ----------------
+    
+    // const nums = [5, 32, 334, 25, 58, 85]
+    // const sum = nums.reduce((acc, el) =>  acc + el, 0)
+
+    // console.log(sum); // 539
+
+    //====================================================
+
+    // ======== SPREAD оператор - раскладывает массив на эл-ты: 
+
+    //     const nums = [5, 32, 334, 25, 58, 85]
+
+    //    console.log(nums); // [5, 32, 334, 25, 58, 85]
+
+    // spread оператор:
+    //    console.log(...nums); // 5, 32, 334, 25, 58, 85
+
+    //======================================================
+
+    
+       
+
+    </script>
+</body>
+</html>
