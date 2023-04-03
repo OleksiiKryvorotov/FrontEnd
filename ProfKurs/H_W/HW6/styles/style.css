@@ -1,0 +1,24 @@
+
+.product-card {
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .product-card h2 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .product-card p {
+    margin: 0;
+  }
+  
+  .in-stock {
+    background-color: green;
+  }
+  
+  .out-of-stock {
+    background-color: grey;
+  }
+  
