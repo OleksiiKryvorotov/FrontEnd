@@ -1,0 +1,15 @@
+
+.cardElem {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.cardElem img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  background-color: white;
+}
+  
