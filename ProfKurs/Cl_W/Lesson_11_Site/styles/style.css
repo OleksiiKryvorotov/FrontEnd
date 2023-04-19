@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wraper {
+    max-width: 1200px;
+    margin: 0 auto; /*центровка*/
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0;
+}
+
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+nav a {
+    color: #424551;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+header input {
+    border: 1px solid #D7DADD;
+    padding: 12px 16px;
+    border-radius: 4px;
+    width: 380px;
+}
+
+/* header > div галочка означ. только первый уровень вложенности. А если без калочки, то обращалось бы ко всем дивам внутри header! { */
+    /* или так: */
+    .icons_block {
+        display: flex;
+    }
+
+    .icons_block div {
+        padding: 0 20px;
+    }
+    
+    .icons_block div:first-child {
+        border-right: 1px solid #DADBDD;
+    }
+
+    .ads_banner {
+        background-color: #17696A; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 0;
+
+    }
+
+    .ads_banner a {
+        color: white;
+        margin: 0 2px;
+        font-size: 12px;
+    }
+
+    .ads_banner a:nth-child(2) {
+        font-weight: 900;
+        text-decoration: none;
+    }
+
+    .ads_banner button {
+        border: none;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        margin: 0 15px;
+    }
+
+    #category_block {
+        background-image: url('../Media/menswear_background.png');
+        background-position: center;
+        background-size: cover;
+        height: 800px;
+    }
+
+    .category_block_content {        
+        padding: 140px 0 180px 0;
+    }
+
+    .category_block_content p {
+        font-size: 18px;
+        color: #1E212C;
+        font-weight: 700;
+    }
+
+    .category_block_content h2 {        
+       font-size: 72px;
+       margin: 20px 0 60px 0;
+       color: #1E212C;
+    }
+
+    .shop_btns {
+        display: flex;
+        gap: 24px;
+    }
+      
+    .shop_btns button {
+        border: 1px solid #17696A;
+        border-radius: 4px;
+        height: 52px;
+        font-size: 16px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+      
+    .shop_btns button:first-child {
+        background-color: transparent;
+        color: #17696A;
+        width: 152px;
+    }
+      
+    .shop_btns button:last-child {
+        background-color: #17696A;
+        color: white;
+        width: 229px;
+    }
+    .numbers_block {
+        display: flex;
+        gap: 4px;
+        color: rgba(66, 69, 81, 0.6);
+        margin-top: 180px;
+    }
+      
+    .numbers_block div {
+        border-bottom: 2px solid rgba(66, 69, 81, 0.6);
+        padding-bottom: 15px;
+        font-size: 28px;
+        font-weight: 700;
+        width: 178px;
+        cursor: pointer;
+    }
+      
+    .numbers_block div:hover {
+        color: rgba(66, 69, 81, 1);
+        border-bottom: 2px solid rgba(66, 69, 81, 1)
+    }
