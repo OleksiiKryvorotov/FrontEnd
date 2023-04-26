@@ -103,5 +103,62 @@ const categories_flex_data = [
     new_arrivals_container.append(cardElem);
   });
 
+  const grid_banners_block = document.querySelector('#grid_banners_block')
+
+  const grid_banners_data = [
+    {
+      id: 1, 
+      back_img: 'media/b1.png',
+      sub_title: 'Summer Collections',
+      title: 'Sale Up to 70%',
+      btn: 'Explore new prices'
+    },
+    {
+      id: 2, 
+      back_img: 'media/b2.png',
+      sub_title: 'Deal of the week',
+      title: 'Stay Warm With Our New Sweaters',
+      btn: 'Shop now'
+    },
+    {
+      id: 3, 
+      back_img: 'media/b3.png',
+      sub_title: 'New collection',
+      title: 'Shoes & Bags autumn / winter 2020',
+      btn: 'See offers'
+    },
+    {
+      id: 4, 
+      back_img: 'media/b4.png',
+      sub_title: 'For All new Email Subscribers',
+      title: 'Get 5% Off & Free Delivery'
+    }
+  ]
+
+    grid_banners_data.forEach(({back_img, sub_title, title, btn}) => {
+    const cardElem = document.createElement('div')
+    const sub_titleElem = document.createElement('p')
+    const titleElem = document.createElement('h3')
+    const btnElem = document.createElement('div')
+
+    cardElem.style.backgroundImage = `url(${back_img})`
+    
+    sub_titleElem.innerText = sub_title
+    titleElem.innerText = title
+
+    btn === undefined ? '' : btnElem.innerText = btn
+    btn === undefined ? '' : btnElem.classList.add('btnElem')
+    
+
+    cardElem.append(sub_titleElem, titleElem, btnElem)
+    grid_banners_block.append(cardElem)
+  })
+
+
+  
+  
+
+
+
 
   
