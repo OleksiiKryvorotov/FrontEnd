@@ -9,6 +9,50 @@
     margin: 0 auto; /*центровка*/
 }
 
+.topbar_black {    
+    height: 44px; 
+    background-color: black;
+           
+}
+
+.main_menu {    
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;    
+}   
+
+.topbar_black a {
+    /* margin-top: 12px; */
+    text-decoration: none;
+    color: white;
+    opacity: 50%;
+    
+}    
+
+.adress_tel {
+    margin-top: 12px;         
+    } 
+
+.menu {   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;   
+    margin-top: 12px;  
+}
+
+.log_reg {   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-right: 270px; */
+    gap: 17px;
+    margin-top: 12px;
+    }
+
 header {
     display: flex;
     justify-content: space-between;

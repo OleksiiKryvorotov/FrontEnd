@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.wraper {
+.wrapper {
     max-width: 1200px;
     margin: 0 auto; /*центровка*/
 }
@@ -17,44 +17,49 @@ header {
    
 }
 
-.topbar_black {        
+.topbar_black {    
+    height: 44px; 
+    background-color: black;
+           
+}
+
+.main_menu {    
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 44px; 
-    background-color: black;
-    font-size: 14px;         
-    }
-   
-   
+    font-size: 14px;    
+}   
 
 .topbar_black a {
+    /* margin-top: 12px; */
     text-decoration: none;
     color: white;
     opacity: 50%;
     
 }    
 
-    .adress_tel {
-        padding-left: 250px;        
+.adress_tel {
+    margin-top: 12px;         
     } 
 
-.menu {
+.menu {   
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 32px;   
-    
+    margin-top: 12px;  
 }
 
-.log_reg {
+.log_reg {   
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 270px;
+    /* padding-right: 270px; */
     gap: 17px;
-}
+    margin-top: 12px;
+    }
 
 
 nav {
