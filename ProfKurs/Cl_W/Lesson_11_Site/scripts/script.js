@@ -154,6 +154,62 @@ const categories_flex_data = [
     grid_banners_block.append(cardElem)
   })
 
+//   Popular categories Block: 
+
+const popular_categories_container = document.querySelector('.popular_categories_container')
+
+  const popular_categories_data = [
+    {
+      id: 1,
+      img: 'media/tops.png',
+      title: 'Tops'      
+    },
+    {
+      id: 2,
+      img: 'media/T-short.png',
+      title: 'T-short'      
+    },
+    {
+      id: 3,
+      img: 'media/caps.png',
+      title: 'Caps'      
+    },
+    {
+      id: 4,
+      img: 'media/sandals.png',
+      title: 'Sandals'      
+    },
+    {
+      id: 5,
+      img: 'media/Jackets.png',
+      title: 'Jackets'      
+    },
+    {
+      id: 6,
+      img: 'media/Coats.png',
+      title: 'Coats'      
+    }
+  ]
+
+  popular_categories_data.forEach(({ img, title }) => {
+    const cardElem = document.createElement('div');
+    const imgELem = document.createElement('div');    
+    const titleElem = document.createElement('p');    
+  
+    imgELem.style.backgroundImage = `url('${img}')`;
+
+    cardElem.classList.add('popular_categories_card');    
+    titleElem.classList.add('popular_categories_title');  
+
+  
+    titleElem.innerText = title;
+  
+
+   
+    cardElem.append(imgELem, titleElem);
+    popular_categories_container.append(cardElem);
+  });
+
 
   
   

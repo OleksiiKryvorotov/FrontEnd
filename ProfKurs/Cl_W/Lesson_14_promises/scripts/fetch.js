@@ -25,7 +25,7 @@ const container = document.querySelector('.container')
 
 // fetch('https://jsonplaceholder.typicode.com/photos')
 // .then(res => res.json())
-// .then(json => render(json))
+// .then(json => console.log(json))
 
 // 3. В container отрисовать карточки фотографий (url, title, albumId) из полученных по запросу данных
 
