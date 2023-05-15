@@ -35,9 +35,9 @@
 const container = document.querySelector('.container');
 
 const getUser = id => {
-  fetch(`https://dummyjson.com/users/${id}`)
+  fetch(`https://dummyjson.com/users/`)
     .then(res => res.json())
-    .then(json => render(json))
+    .then(json => console.log(json))
 }
 
 getUser(4);

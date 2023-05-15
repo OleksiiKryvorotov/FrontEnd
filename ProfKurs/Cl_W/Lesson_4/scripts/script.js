@@ -62,7 +62,7 @@
 //     multNums.push(nums[i] * 10)
 // }
 
-// //---  А можно с пом. метода for Each: ----------------------
+// //---  А можно с пом. метода forEach: ----------------------
 
 // const multNums_forEach =[]
 // nums.forEach(el => multNums_forEach.push(el * 10))
