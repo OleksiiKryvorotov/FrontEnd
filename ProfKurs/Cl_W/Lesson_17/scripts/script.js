@@ -57,66 +57,66 @@ event.target.reset()
 
 // смтори выше - нужно вставить вызов ф-ции render_cards!
 
-// const render_cards = users => {
-//     container.innerText = '' 
-
-// users.forEach(({ firstname, age }) => {
-//     const cardElem = document.createElement('div');
-//     const firstnameElem = document.createElement('p');
-//     const ageElem = document.createElement('p');
-  
-//     firstnameElem.innerText = `Name: ${firstname}`;
-//     ageElem.innerText = `Age: ${age}`;
-  
-//     cardElem.append(firstnameElem, ageElem);
-//     container.append(cardElem);
-//   })            
-// }
-
-// 2. При клике на кнопку очистить все карточки:
-
-// смтори выше - для 2-го задания
-// delete_all_btn.addEventListener('click', () => {
-//     users_data = []
-//     render_cards(users_data)
-// })
-
-// 3. Удалить какую-то конкретную карточку
-
 const render_cards = users => {
     container.innerText = '' 
 
-users.forEach(({ id, firstname, age}) => {
+users.forEach(({ firstname, age }) => {
     const cardElem = document.createElement('div');
     const firstnameElem = document.createElement('p');
     const ageElem = document.createElement('p');
-    // добавим:
-    const cross_icon = document.createElement('span')
-    //-------------------
   
     firstnameElem.innerText = `Name: ${firstname}`;
     ageElem.innerText = `Age: ${age}`;
-
-     // добавим:
-     cross_icon.innerText = 'X'
-
-     cross_icon.classList.add('cross_icon')
-
-     cross_icon.addEventListener('click', () => {
-        users = users.filter(el => el.id !== id)
-        render_cards(users)
-     })
-     //----------------------------------------     
   
-    cardElem.append(firstnameElem, ageElem, cross_icon);
+    cardElem.append(firstnameElem, ageElem);
     container.append(cardElem);
   })            
 }
 
+// 2. При клике на кнопку очистить все карточки:
+
+// смтори выше - для 2-го задания
 delete_all_btn.addEventListener('click', () => {
     users_data = []
     render_cards(users_data)
 })
+
+// 3. Удалить какую-то конкретную карточку
+
+// const render_cards = users => {
+//     container.innerText = '' 
+
+// users.forEach(({ id, firstname, age}) => {
+//     const cardElem = document.createElement('div');
+//     const firstnameElem = document.createElement('p');
+//     const ageElem = document.createElement('p');
+//     // добавим:
+//     const cross_icon = document.createElement('span')
+//     //-------------------
+  
+//     firstnameElem.innerText = `Name: ${firstname}`;
+//     ageElem.innerText = `Age: ${age}`;
+
+//      // добавим:
+//      cross_icon.innerText = 'X'
+
+//      cross_icon.classList.add('cross_icon')
+
+//      cross_icon.addEventListener('click', () => {
+//         users = users.filter(el => el.id !== id)
+//         render_cards(users)
+//      })
+//      //----------------------------------------     
+  
+//     cardElem.append(firstnameElem, ageElem, cross_icon);
+//     container.append(cardElem);
+//   })            
+// }
+
+// delete_all_btn.addEventListener('click', () => {
+//     users_data = []
+//     render_cards(users_data)
+// })
 
 
 
