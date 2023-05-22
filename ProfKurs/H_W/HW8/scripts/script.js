@@ -74,13 +74,13 @@ const render = products => {
 
     const cross_icon = document.createElement('span')
 
-    const discountedPrice = price * ( 1-discount)
+    // const discountedPrice = price * ( 1-discount)
    
 
     titleElem.innerText = `Title: ${title}`;
     priceElem.innerText = `Price: ${price}`;
     discountElem.innerText = `Discount: ${discount}`;
-    newPriceElem.innerText =`New price: ${discountedPrice}`
+    newPriceElem.innerText =`New price: ${price * ( 1-discount)}`
     
     cross_icon.innerText = 'X'
 
