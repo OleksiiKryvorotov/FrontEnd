@@ -24,3 +24,28 @@ cross_icon.addEventListener('click', () => popup.classList.remove('modal_active'
 // ДЗ
 // При сабмите формы собираются данные, формируется объект (id, email, password) и добавляется объект в массив со всеми зарегистрированными пользователями
 
+const registration_form = document.querySelector('.registration_form');
+
+let all_users = [];
+
+registration_form.addEventListener('submit', e => {
+    e.preventDefault();
+
+    const { id, email, password } = e.target;
+
+   
+
+const users = {
+    id: Date.now(),    
+    email: email.value,
+    password: password.value
+}
+
+    all_users.push(users);
+
+    console.log(all_users);
+
+    // render_cards(all_users)
+    e.target.reset()
+
+}) 

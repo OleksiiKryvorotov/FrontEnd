@@ -30,7 +30,7 @@ add_workers_form.addEventListener('submit', e => {
 
   all_workers.push(worker);
 
-//   console.log(all_workers);
+  console.log(all_workers);
   render_cards(all_workers)
   
   e.target.reset()
