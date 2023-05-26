@@ -1,0 +1,16 @@
+.App {
+  display: flex;
+  height: 100vh;
+}
+
+.Chats {
+  width: 600px; 
+}
+
+.ChatWindow {
+  background-color: aqua;
+  flex-grow: 1;
+}
+
+
+
