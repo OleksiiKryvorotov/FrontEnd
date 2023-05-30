@@ -12,11 +12,21 @@ sudo npm install -g create-react-app
 
 
 
-3) потом перед работой выполняем
+3) потом перед работой выполняем:
+сначала надо зайти в папку, где будет создана папка myapp (можно и лдругое название)
+
+npx create-react-app myapp
+
 создаётся папка myapp файлы объёмные, долго качаются
 это нужно делать перед работой 
 
-npx create-react-app myapp
+Должно написать:
+ cd myapp
+ npm start
+
+Happy hacking!
+
+
 
 4) потом переходим в Терминале в папку myapp
  cd myapp
