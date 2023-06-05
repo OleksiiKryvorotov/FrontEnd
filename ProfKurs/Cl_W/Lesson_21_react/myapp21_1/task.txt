@@ -1,0 +1,9 @@
+7. Создать в отдельном файле массив users с 6 пользователями (id, firstName, lastName, age, salary)
+8. Создать компоненты UsersContainer и User
+9. В UsersContainer на основе массива users создать User
+10. Добавить компонент UsersContainer в App
+11. В UsersContainer вывести только тех пользователей, чья зарплата превышает 1000
+12. Создать TasksContainer и TaskItem
+13. TasksContainer добавить в User
+14. Передать массив tasks в TasksContainer из User через пропс
+15. В TasksContainer создать таски для каждого юзера
