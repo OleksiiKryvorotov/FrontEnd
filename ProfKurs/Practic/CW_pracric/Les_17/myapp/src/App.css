@@ -5,12 +5,24 @@
 
 .Chats {
   width: 600px; 
+  display: flex;
+  flex-direction: column;
+
 }
 
 .ChatWindow {
   background-color: aqua;
   flex-grow: 1;
 }
+.Chats__list {
+  padding: 8px 7px;
+  /* сделать ползунок */
+  flex-grow: 1;
+  overflow: auto; 
+}
+
+
+
 
 
 
