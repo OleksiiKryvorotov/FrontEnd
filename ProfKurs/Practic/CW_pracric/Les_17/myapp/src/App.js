@@ -6,8 +6,9 @@ import UserInfo from "./components/UserInfo/UserInfo";
 import chats from "./mock/chats";
 
 function App() {
-  const [currentID, setCurrentId] = useState();
-  console.log(currentID, "render");
+  const [currentID, setCurrentId] = useState(+localStorage.getItem("chatId"));
+  const [chat, setChat] = useState({});
+  console.log("render");
 
   return (
     <div className="App">
@@ -25,6 +26,8 @@ function App() {
                 time={chatItem.last_msg_time}
                 handleClick={() => {
                   setCurrentId(chatItem.id);
+                  setChat(chatItem);
+                  localStorage.setItem("chatId", chatItem.id);
                 }}
               />
             );
@@ -32,7 +35,7 @@ function App() {
         </div>
       </div>
       <div className="ChatWindow">
-        <UserInfo />
+        <UserInfo title={chat.title} avatar={chat.avatar} />
       </div>
     </div>
   );

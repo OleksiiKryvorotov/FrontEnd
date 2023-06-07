@@ -1,21 +1,21 @@
 import "./UserInfo.css";
-import chats from "../../mock/chats";
+import Icon from "../Icon/Icon";
 
-export default function UserInfo() {
-  const userInfo = chats[0];
+export default function UserInfo(props) {
   return (
     <div className="UserInfo">
       <div className="UserInfo__chatInfo">
-        <img className="UserInfo__avatar" src={userInfo.avatar} />
+        <img className="UserInfo__avatar" src={props.avatar} />
         <div className="UserInfo__chatInfoText">
-          <h3 className="UserInfo__title">{userInfo.title}</h3>
+          <h3 className="UserInfo__title">{props.title}</h3>
           <p className="UserInfo__status">Online</p>
         </div>
       </div>
       <div className="UserInfo__icons">
-        <i className="fa-solid fa-magnifying-glass"></i>
-        <i className="fa-solid fa-phone"></i>
-        <i className="fa-solid fa-ellipsis-vertical"></i>
+        <Icon iconClassName="fa-magnifying-glass" />
+        <Icon iconClassName="fa-phone" />
+        <Icon iconClassName="fa-ellipsis-vertical" />
+        <Icon iconClassName="fa-heart" />
       </div>
     </div>
   );
