@@ -3,6 +3,7 @@ import ChatsHeader from "./components/ChatsHeader/ChatsHeader";
 import ChatElement from "./components/ChatElement/ChatElement";
 import { useState } from "react";
 import UserInfo from "./components/UserInfo/UserInfo";
+import RecordButton from "./components/RecordButton/RecordButton";
 import chats from "./mock/chats";
 
 function App() {
@@ -36,9 +37,18 @@ function App() {
       </div>
       <div className="ChatWindow">
         <UserInfo title={chat.title} avatar={chat.avatar} />
+        <div
+          className="RecordButton__wrapper"
+          style={{
+            height: "600px",
+          }}
+        >
+          <RecordButton />
+        </div>
       </div>
     </div>
   );
 }
 
 export default App;
+
