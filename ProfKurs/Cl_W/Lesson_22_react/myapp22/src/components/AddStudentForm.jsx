@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function AddStudentForm() {
+export default function AddStudentForm({ add_student }) {
 
   const handleSubmit = event => {
     event.preventDefault();
@@ -13,7 +13,7 @@ export default function AddStudentForm() {
       major: major.value,
       avg_grade: +grade.value
     }
-    console.log(new_student);
+    add_student(new_student);
     event.target.reset()
   }
 
