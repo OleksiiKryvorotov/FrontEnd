@@ -5,7 +5,7 @@ export default function ProductsContainer({ products, delete_product}) {
   return (
     <div>
         {
-            products.map(el => <ProductsItem key={el.id} {...el} delete_student={delete_product} />)
+            products.map(el => <ProductsItem key={el.id} {...el} delete_product={delete_product} />)
         }
     </div>
   )

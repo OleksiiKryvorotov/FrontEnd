@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import BooksContainer from './components/BooksContainer';
+import BooksContainer from './components/BooksContainer'
 import { books_data } from './data/books_data';
 import AddBookForm from './components/AddBookForm';
 
@@ -15,7 +15,7 @@ function App() {
   return ( 
     <div> 
       <AddBookForm add_book={add_book} />         
-           <BooksContainer books={books} delete_book={delete_book} />
+      <BooksContainer books={books} delete_book={delete_book} />
     </div>
   );
 }
