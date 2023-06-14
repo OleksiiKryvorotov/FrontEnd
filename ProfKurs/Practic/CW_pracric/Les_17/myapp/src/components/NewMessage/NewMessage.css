@@ -1,0 +1,29 @@
+.NewMessage {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  align-items: center;
+}
+
+.MessageWrapper {
+  border-radius: 0.75rem;
+  background-color: white;
+  padding: 17px;
+  margin-right: 30px;
+  display: flex;
+  flex-wrap: nowrap;
+  cursor: pointer;
+}
+
+.MessageWrapper input {
+  outline: none;
+  border: 0;
+  margin: 0 12px;
+}
+
+.MessageWrapper i:hover {
+  color: blue;
+}

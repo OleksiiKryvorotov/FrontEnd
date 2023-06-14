@@ -4,13 +4,14 @@
 }
 
 .Chats {
-  width: 600px;
+  width: 200px;
   display: flex;
   flex-direction: column;
 }
 
 .ChatWindow {
   flex-grow: 1;
+  position: relative;
 }
 
 .Chats__list {
