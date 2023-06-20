@@ -1,0 +1,9 @@
+1. Создать CardItem и CardsContainer
+2. Добавить CardsContainer в App
+3. В App создать состояние cards(+setCards) и положить в изначальное состояние массив words_data
+4. Из сосотояния cards в CardsContainer отрисовать карточки (CardItem)
+5. Стилизовать карточки и контейнер
+6. Добавить к каждой карточке крестик, при клике на который карточка будет удаляться
+7. Создать TriggersContainer и TriggerBtn (div)
+8. Добавить TriggersContainer в App
+8. Добавить TriggerBtn в TriggersContainer

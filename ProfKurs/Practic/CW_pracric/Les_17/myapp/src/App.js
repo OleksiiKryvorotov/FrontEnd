@@ -54,7 +54,9 @@ function App() {
         <ChatBackground />
         <UserInfo title={chat.title} avatar={chat.avatar} />
         <ChatMessages messages={chatsMessages} />
-        <NewMessage />
+        <NewMessage 
+        chatsMessages={chatsMessages}
+        setChatMessages={setChatMessages}  />
       </div>
     </div>
   );
