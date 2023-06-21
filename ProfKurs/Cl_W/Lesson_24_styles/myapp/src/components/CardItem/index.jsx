@@ -1,20 +1,34 @@
 import React from 'react'
 import s from './index.module.css'
 
-export default function CardItem({ id, rus, eng, lang, delete_card }) {
+export default function CardItem({ id, rus, eng, lang, delete_card, change_lang }) {
 
-    const card_text = lang === 'eng' ? eng : rus;
+  const card_text = lang === 'eng' ? eng : rus;
 
-    const styles = {
-      color: lang === 'eng' ? 'white' : 'rgb(41, 128, 185)',
-      backgroundColor: lang === 'eng' ? 'rgb(41, 128, 185)' : 'white'
-    }
+  const styles = {
+    color: lang === 'eng' ? 'white' : 'rgb(41, 128, 185)',
+    backgroundColor: lang === 'eng' ? 'rgb(41, 128, 185)' : 'white'
+  }
+
+  const deleteCard = event => {
+    delete_card(id);
+    event.stopPropagation()
+  }
 
   return (
-    <div className={s.card_item} style={styles}>
-       
-        <span onClick={() => delete_card(id)}>X</span>
-        <p> { card_text }</p>
+    <div 
+      className={s.card_item} 
+      style={styles}
+      onClick={() => change_lang(id)}
+    >
+      <span onClick={deleteCard}>X</span>
+      
+      {/* <span onClick={(event) => {
+        delete_card(id);
+        event.stopPropagation()
+      }}>X</span> */}
+
+      <p>{ card_text }</p>
     </div>
   )
 }
