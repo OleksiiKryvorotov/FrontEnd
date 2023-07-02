@@ -3,7 +3,7 @@ import s from './index.module.css'
 import { Context } from '../../context';
 
 export default function LikeBtn({ like, post_id }) {
-
+ 
   const { change_like } = useContext(Context);
 
   const like_text = like ? 'Liked' : 'Like?';

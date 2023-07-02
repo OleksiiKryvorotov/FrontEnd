@@ -15,4 +15,4 @@ export default function PostItem({ id, title, description, like, comments }) {
       <p>{ description }</p>
     </div>
   )
-}
+} 
