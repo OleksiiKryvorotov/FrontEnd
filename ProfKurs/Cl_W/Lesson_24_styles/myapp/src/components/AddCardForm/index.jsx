@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import s from './index.module.css'
+import { Context } from '../../conrext';
 
-export default function AddCardForm({ add_card }) {
+export default function AddCardForm() {
+
+  const { add_card } = useContext(Context)
 
   const submit = e => {
     e.preventDefault();

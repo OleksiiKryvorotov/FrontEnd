@@ -4,6 +4,7 @@ import CardsContainer from './components/CardsContainer';
 import { words_data } from './data/words_data';
 import TriggersContainer from './components/TriggersContainer';
 import AddCardForm from './components/AddCardForm';
+import { Context } from './conrext';
 
 function App() {
 
@@ -45,9 +46,11 @@ function App() {
 
   return (
     <div>
-      <AddCardForm add_card={add_card} />
-      <CardsContainer cards={cards} delete_card={delete_card} change_lang ={change_lang} />
-      <TriggersContainer change_to_rus={change_to_rus} change_to_eng={change_to_eng} />        
+      <Context.Provider value={{ add_card,cards, delete_card, change_lang }}>      
+      <AddCardForm />
+      <CardsContainer />
+      <TriggersContainer  /> 
+      </Context.Provider>     
     </div>
   );
 }

@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import s from './index.module.css'
+import { Context } from '../../conrext';
 
-export default function CardItem({ id, rus, eng, lang, delete_card, change_lang }) {
+export default function CardItem({ id, rus, eng, lang}) {
+
+  const { delete_card, change_lang} = useContext(Context)
 
   const card_text = lang === 'eng' ? eng : rus;
 

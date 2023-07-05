@@ -1,0 +1,7 @@
+.item {
+    color: gray;
+    border-bottom: dotted;
+    padding: 5px 0;
+    font-size: 13px;
+    cursor: pointer;
+  }

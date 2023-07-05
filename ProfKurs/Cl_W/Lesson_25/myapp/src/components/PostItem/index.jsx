@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import s from './index.module.css'
 import LikeBtn from '../LikeBtn'
 import { Context } from '../../context'
+import CommentsContainer from '../CommentsContainer';
 
 export default function PostItem({ id, title, description, like, comments }) {
 
@@ -13,6 +14,7 @@ export default function PostItem({ id, title, description, like, comments }) {
       <LikeBtn like={like} post_id={id} />
       <h3>{ title }</h3>
       <p>{ description }</p>
+      <CommentsContainer comments={comments} post_id={id} />
     </div>
   )
-} 
+}
