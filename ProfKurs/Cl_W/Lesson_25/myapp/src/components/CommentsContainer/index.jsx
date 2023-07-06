@@ -7,10 +7,10 @@ export default function CommentsContainer({ comments, post_id }) {
     <div>
       <div>
         {
-          comments.map(el => <CommentsItem key={el.id} {...el} />)
+          comments.map(el => <CommentsItem key={el.id} {...el} post_id={post_id} />)
         }
       </div>
-      <AddCommentForm post_id={post_id} />
+      <AddCommentForm post_id={post_id}  />
     </div>
   )
 }
