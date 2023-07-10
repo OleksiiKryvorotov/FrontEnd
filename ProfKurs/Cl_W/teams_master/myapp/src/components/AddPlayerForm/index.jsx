@@ -5,12 +5,17 @@ import { Context } from '../../context'
 
 export default function AddPlayerForm() {
 
-  const { teams } = useContext(Context);
+  const { teams, add_player } = useContext(Context);
 
   const submit = e => {
     e.preventDefault();
-    const { player } = e.target;
-    console.log(player.value);
+    const { player, team } = e.target;
+    const new_player = {
+      id: Date.now(),
+      player: player.value,
+      team: team.value
+    }
+    add_player(new_player)
     e.target.reset()
   }
 
@@ -20,7 +25,7 @@ export default function AddPlayerForm() {
         <p>Add player</p>
         <input type='text' placeholder="Players's name" name='player' />
       </label>
-      <Select options={teams} />
+      <Select options={teams} name='team' />
       <button>Add player</button>
     </form>
   )
