@@ -1,0 +1,5 @@
+1. Создать MainPage (/), ProductsPage (/products). Настроить роутинг
+2. Создать NavMenu, стилизовать
+3. Создать ProductsContainer и ProductItem
+4. В ProductsContainer создать состояние products(+setProducts)
+5. Написать функцию getAllProducts, которая отправляет запрос по ссылке https://api.escuelajs.co/api/v1/products и полученные данные записывать в состояние products
