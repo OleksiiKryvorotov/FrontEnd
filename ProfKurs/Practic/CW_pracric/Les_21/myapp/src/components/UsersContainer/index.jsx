@@ -3,6 +3,7 @@ import { users } from './users'
 import UserItem from '../UserItem';
 import s from './style.module.css'
 import AddUser from '../AddUser';
+import UsersCalculation from '../UsersCalculation';
 
 export default function UsersContainer() {
     //2.Создать state usersList и пройтись по нему map для каждого пользователя создать параграф с его именем:
@@ -57,21 +58,27 @@ export default function UsersContainer() {
         setUsersList([...usersList])
       }
 
+      //12.Добавить кнопку при нажатии на которую пользователю присваивается случайное значение 
+
+      const setRandomAge = (userId) => {
+        const target = usersList.find(({id}) => id === userId)
+        target.age = Math.round(Math.random() * 38 + 2)
+        setUsersList([...usersList])
+      }       
+
   return (
     
     <div>  
       <AddUser addUser={addUser}/>    
     <div className={s.container}>
-        {
-            //для 2-го задания:
-            //  usersList.map(item => <p key={item.id}>{item.first_name}</p>)
-            //------------------------------
+        {       
 
-            //для 3-го задания:
-         usersList.map(item => <UserItem  key={item.id} {...item} remove={remove} incrAge={incrAge} decrAge={decrAge} resetAge={resetAge}/>)
+            //для 2-го и 3-го задания:
+         usersList.map(item => <UserItem  key={item.id} {...item} remove={remove} incrAge={incrAge} decrAge={decrAge} resetAge={resetAge} setRandomAge={setRandomAge} usersList={usersList}/>)
             //-----------------------------
         }
         </div>
+        <UsersCalculation usersList={usersList} />
     </div>
   )
 }
