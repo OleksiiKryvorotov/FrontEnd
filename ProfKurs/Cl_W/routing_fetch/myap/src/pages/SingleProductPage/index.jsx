@@ -10,6 +10,6 @@ export default function SingleProductPage() {
   getSingleProducts(id)
 
   return (
-    <div>SingleProductPag</div>
+    <div>SingleProductPage</div>
   )
 }

@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom'
 
 export default function ProductItem({ id, title, price, images }) {
 
-    const product_route = `/products/${id}`
+  const product_route = `/products/${id}`
+  
   return (
     <Link to={product_route}>
     <div className={s.item}>
