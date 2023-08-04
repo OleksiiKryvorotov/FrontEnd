@@ -5,11 +5,13 @@ export const weekDays_data = [
     tasks: [
       {
         id: 1,
-        task: 'To buy some bread'
+        task: 'To buy some bread',
+        completed: false
       },
       {
         id: 2,
-        task: 'To review homeworks'
+        task: 'To review homeworks',
+        completed: true
       }
     ]
   },

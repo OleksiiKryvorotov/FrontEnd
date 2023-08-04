@@ -22,6 +22,7 @@ export default function NavMenu() {
       <div className={linksClasses}>
         <Link to='/'>Main</Link>
         <Link to='/tasks'>Tasks</Link>
+        <Link to='/products'>Products</Link>
       </div>
     </div>
   )
