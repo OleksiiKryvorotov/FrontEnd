@@ -6,6 +6,8 @@ import Products from "../../pages/Products";
 import ProductsDescription from "../../pages/ProductsDescription";
 import NotFound from "../../pages/NotFound";
 import Nav from "../Nav";
+import ProductItem from "../../pages/ProductItem";
+import Test_mass_Methods from '../Test_mass_Methods'
 
 function App() {
   return (
@@ -16,9 +18,11 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/categories' element={<Categories />} />
         <Route path='/products' element={<Products />} />
+        <Route path='/product/:id' element={<ProductItem/>} />        
         <Route path='/products_description' element={<ProductsDescription />} />
         <Route path='*' element={<NotFound />} />        
-      </Routes>    
+      </Routes>   
+      <Test_mass_Methods /> 
     </>
   );
 }
