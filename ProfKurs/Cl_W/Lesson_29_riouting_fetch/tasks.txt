@@ -8,3 +8,4 @@
 8. Создать страницу ProductsPage, интегрировать в роутинг
 9. Написать функцию, отправляющую запрос по ссылке https://dummyjson.com/products, полученные данные записать в состояние products
 10. Из состояния products отрисовать карточки (ProductsContainer и ProductItem)
+
