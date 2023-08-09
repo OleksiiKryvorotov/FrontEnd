@@ -1,0 +1,20 @@
+.word_card {
+    border: 2px solid green;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    margin: 5px auto;
+    width: 80%;
+    font-size: 16px;
+    font-weight:  700;
+  }
+
+  .word_card:hover {
+    background-color: green;
+    color: white;
+  }
+  
+  .word_card p:last-child {
+    cursor: pointer;
+  }
