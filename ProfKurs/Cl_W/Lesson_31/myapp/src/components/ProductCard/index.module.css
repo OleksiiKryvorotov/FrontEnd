@@ -1,0 +1,21 @@
+.product {
+   
+   padding: 20px;
+   min-width: 300px;
+   position: relative;
+   }
+   .close {
+   cursor: pointer;
+   border-radius: 50%;
+   width: 20px;
+   height: 20px;
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   }
+   .close:hover {
+   border: 1px solid brown;
+   }

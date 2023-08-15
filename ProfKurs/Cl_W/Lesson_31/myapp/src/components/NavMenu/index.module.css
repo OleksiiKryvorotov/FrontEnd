@@ -1,0 +1,45 @@
+.nav_menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 30px;
+    background-color: darkcyan;
+    font-size: 25px;
+  }
+  
+  .links_block {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .nav_menu a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .menu_icon {
+    cursor: pointer;
+    color: white;
+    font-size: 35px;
+    display: none;
+  }
+  
+  @media (max-width: 800px){
+    .nav_menu{
+      width: 10%;
+    }
+  
+    .links_block {
+      display: none;
+    }
+  
+    .links_block.opened {
+      display: flex;
+    }
+  
+    .menu_icon {
+      display: block;
+    }
+  }

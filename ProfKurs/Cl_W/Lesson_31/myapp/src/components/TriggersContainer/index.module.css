@@ -1,0 +1,15 @@
+.triggers {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .triggers div {
+    padding: 10px;
+    border: 1px solid transparent;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    width: max-content;
+  }

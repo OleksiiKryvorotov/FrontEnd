@@ -1,14 +1,19 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import AddWordForm from './components/AddWordForm';
-import WordsContainer from './components/WordsContainer';
+import MainPage from './pages/MainPage';
+import ProductsPage from './pages/ProductsPage';
+import WordsPage from './pages/WordsPage';
+import NavMenu from './components/NavMenu';
 
 function App() {
-
-  
   return (
     <div>
-     <AddWordForm />
-     <WordsContainer />
+      <NavMenu />
+      <Routes>
+        <Route path='/' element={<MainPage />} />
+        <Route path='/products' element={<ProductsPage />} />
+        <Route path='/words' element={<WordsPage />} />
+      </Routes>
     </div>
   );
 }
