@@ -6,6 +6,7 @@ import { addAction } from '../../store/reducer/userReducer'
 export default function AddUser() {
 
     const dispatch = useDispatch()
+    
     const onSubmit = event => {
         event.preventDefault()
         const {name, lastname, age, gender} = event.target
