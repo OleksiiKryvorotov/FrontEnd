@@ -23,7 +23,7 @@ const defaultState = [
     {
         id: 4,
         name: 'Eric',
-        lastname: 'Speher',
+        lastname: 'Speer',
         age: 19,
         gender: 'man'
     },
@@ -32,10 +32,14 @@ const defaultState = [
 const REMOVE ='[USERS] REMOVE'
 const ADD ='[USERS] ADD'
 const CLEAR ='[USERS] CLEAR'
+const REMOVE_MALE ='[USERS] REMOVE_MALE'
+const REMOVE_FEMALE ='[USERS] REMOVE_FEMALE'
 
 export const removeAction = (payload) => ({type: REMOVE, payload})
 export const addAction = (payload) => ({type: ADD, payload})
 export const clearAction = () => ({type: CLEAR})
+export const removeMaleAction = () => ({type: REMOVE_MALE})
+export const removeFemaleAction = () => ({type: REMOVE_FEMALE})
 
 export const userReducer = (state = defaultState, action) => {
     if (action.type === REMOVE) {
@@ -45,6 +49,12 @@ export const userReducer = (state = defaultState, action) => {
     }
     else if (action.type === CLEAR) {
         return []
+    }
+    else if (action.type === REMOVE_MALE) {
+        return state.filter(({gender}) => gender !== 'man')
+    }
+    else if (action.type === REMOVE_FEMALE) {
+        return state.filter(({gender}) => gender !== 'frau')
     }
    
     return state

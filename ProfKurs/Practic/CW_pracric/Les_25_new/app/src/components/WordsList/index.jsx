@@ -1,5 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
+import WordItem from '../WordItem'
 
 export default function WordsList() {
 
@@ -8,7 +9,8 @@ export default function WordsList() {
   return (
     <div>
         {
-            wordsArray.map(item => <p key={item}>{item}</p>)
+          wordsArray.length === 0 ? <p>Список слов пуст</p>
+          : wordsArray.map(word => <WordItem key={word.id} {...word}/>)
         }
     </div>
   )

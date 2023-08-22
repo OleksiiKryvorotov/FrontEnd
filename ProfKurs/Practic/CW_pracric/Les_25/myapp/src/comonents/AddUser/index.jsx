@@ -1,7 +1,7 @@
 import React from 'react'
 import s from './style.module.css'
 import { useDispatch } from 'react-redux'
-import { addAction, clearAction } from '../../store/reducer/userReducer'
+import { addAction, clearAction, removeMaleAction, removeFemaleAction } from '../../store/reducer/userReducer'
 
 export default function AddUser() {
 
@@ -31,6 +31,8 @@ export default function AddUser() {
         </select>
         <button>Добавить</button>
         <button type='button' onClick={() => dispatch(clearAction())}>Очистить</button>
+        <button type='button' onClick={() => dispatch(removeMaleAction())}>Удалить мужчин</button>
+        <button type='button' onClick={() => dispatch( removeFemaleAction())}>Удалить женщин</button>
     </form>
 
     

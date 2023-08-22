@@ -12,8 +12,10 @@ export default function AddTask() {
     const onSubmit = event => {
         event.preventDefault()
         const title = event.target.title.value   
-        const userId = event.target.userId.value       
-        dispatch(addAction({title, userId }));
+        const userId = +event.target.userId.value  
+        const done = false  
+           
+        dispatch(addAction({title, userId, done }));
         event.target.reset()
     }
 

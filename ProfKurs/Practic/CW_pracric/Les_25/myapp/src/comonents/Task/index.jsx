@@ -4,10 +4,9 @@ import { removeAction } from '../../store/reducer/tasksReducer'
 
 export default function Task({id, title, userId}) {
 
-  const dispatch = useDispatch()  
+  const dispatch = useDispatch()    
   const user = useSelector(({users}) => users.find(elem => elem.id === +userId )) 
-
-  const userRow = user === undefined ? "Польозователь удален" : `${user.name} ${user.lastname}`
+  const userRow = user === undefined ? "Польозователь удален" : `${user.name} ${user.lastname}`  
 
   return (
     <div>
