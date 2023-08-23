@@ -16,7 +16,7 @@ function App() {
     <div>
       <Routes>
         <Route path='/' element={<MainPage />} />
-        <Route path='/:id' element={<SinglePostPage />} />
+        <Route path='/post/:post_id' element={<SinglePostPage />} />
       </Routes>
     </div>
   );
