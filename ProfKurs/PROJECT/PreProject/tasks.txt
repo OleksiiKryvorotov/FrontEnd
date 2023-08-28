@@ -1,0 +1,8 @@
+1. Создать MainPage, AllCategoriesPage, AllProductsPage, ProductsByCategoriesPage, SingleProductPage, CartPage, NotFoundPage
+2. Создать NavMenu и Footer
+3. настроить роутинг - npm i react-router-dom
+
+4. Создать store, подключить к приложению
+5. Создать categoriesReducer, создать loadAllCategoriesAction, который принимает массив с категориями и записывает его в state, добавить этот редьюсер в rootReducer
+6. Написать запрос getAllCategories (https://fakestoreapi.com/products/categories) и выводит полученные данные в консоль
+
