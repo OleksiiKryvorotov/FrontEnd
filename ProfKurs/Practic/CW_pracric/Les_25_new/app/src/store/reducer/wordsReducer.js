@@ -9,16 +9,19 @@ const words = [
 
 const ADD = '[WORDS] ADD'
 const REMOVE = '[WORDS] REMOVE'
+const CLEAR = '[WORDS] CLEAR'
 
 export const addWordAction = (payload) => ({type: ADD, payload})
 export const removeWordsAction = (payload) => ({type: REMOVE, payload})
+export const clearWordsAction = () => ({type: CLEAR})
 
 export const wordsReducer = (state = words, action) => {
     if (action.type === REMOVE) {
         return state.filter(({id}) => id !== action.payload)
     }else if (action.type === ADD) {
         return [...state, {id: Date.now(), title: action. payload}]
-
+    }else if (action.type === CLEAR) {
+        return [] 
     }
     return state
 }

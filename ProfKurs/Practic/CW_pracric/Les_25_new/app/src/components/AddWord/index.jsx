@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import { addWordAction } from '../../store/reducer/wordsReducer'
+import { addWordAction, clearWordsAction } from '../../store/reducer/wordsReducer'
 
 export default function AddWord() {
 
@@ -18,6 +18,7 @@ export default function AddWord() {
     <form onSubmit={onSubmit}>
         <input type='text' name='title' /> 
         <button>Добавить</button>
+        <button type='button' onClick={() => dispatch(clearWordsAction())}>Очистить список</button>
     </form>
   )
 }

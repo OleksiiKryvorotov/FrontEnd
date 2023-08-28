@@ -4,7 +4,7 @@ import WordsList from "../WordsList";
 function App() {
   return (
     <div>
-      <AddWord />
+     <AddWord />
      <WordsList />
     </div>
   );
