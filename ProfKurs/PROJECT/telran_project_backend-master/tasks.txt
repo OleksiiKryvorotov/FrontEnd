@@ -4,5 +4,14 @@
 
 4. Создать store, подключить к приложению
 5. Создать categoriesReducer, создать loadAllCategoriesAction, который принимает массив с категориями и записывает его в state, добавить этот редьюсер в rootReducer
-6. Написать запрос getAllCategories (https://fakestoreapi.com/products/categories) и выводит полученные данные в консоль
+6. Написать запрос getAllCategories (http://localhost:3333/categories/all) и выводит полученные данные в консоль
+
+7. Отрисовать карточки категорий: 1) стилизовать карточки/контейнер, 2) названия категорий должны с большой буквы
+
+8. При клике на карточку категории перебрасывать на роут /categories/:id
+
+9. При перебрасывании на роут /categories/:id отрисовывать карточки товаров данной категории:
+  - Создать productsByCategoryReducer, loadProductsByCategoryAction, добавить action в корневой редьюсер
+  - Написать функцию, отправляющую fetch-запрос по ссылке http://localhost:3333/categories/:id и записывающую полученные данные в состояние (вызвать loadProductsByCategoryAction)
+  - Достать состояние из store в ProductsByCategoryPage, отрисовать карточки (ProductsContainer, ProductCard). ProductsContainer импортировать в ProductsByCategoryPage
 
