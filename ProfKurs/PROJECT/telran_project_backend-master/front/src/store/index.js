@@ -5,7 +5,7 @@ import { productsByCategoryReducer } from './reducers/productsByCategoryReducer'
 
 const rootReducer = combineReducers({
     categories: categoriesReducer,
-    // productsByCategory: productsByCategoryReducer
+    productsByCategory: productsByCategoryReducer
 });
   
 export const store = createStore(rootReducer, applyMiddleware(thunk));

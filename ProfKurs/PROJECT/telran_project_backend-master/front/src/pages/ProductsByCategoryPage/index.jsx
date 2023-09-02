@@ -6,11 +6,17 @@ import { useParams } from 'react-router-dom';
 
 export default function ProductsByCategoryPage() {
 
-  
+  const {id} =useParams()
+
+  const dispatch = useDispatch()
+
+  useEffect(() => dispatch(getProductsByCategory(id)), [])
+
+  const products_by_category_state = useSelector(state => state.productsByCategory)
 
   return (
     <div>
-    ProductsByCategoryPage
+      <ProductsContainer products={products_by_category_state}/>
     </div>
   )
 }
