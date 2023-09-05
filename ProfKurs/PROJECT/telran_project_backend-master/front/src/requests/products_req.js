@@ -8,3 +8,7 @@ export const getProductsByCategory = (id) => {
       .then(json => dispatch(loadProductsByCategoryAction(json.data)))
   }
 }
+export const getAllProducts = () => {}
+
+
+

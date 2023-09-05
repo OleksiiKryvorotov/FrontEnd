@@ -12,12 +12,16 @@ import NotFoundPage from './pages/NotFoundPage'
 import { getAllCategories } from './requests/categories_req';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
+import { getAllProducts } from './requests/products_req';
 
 function App() {
 
   const dispatch = useDispatch();
 
-  useEffect(() => dispatch(getAllCategories), []); 
+  useEffect(() => {
+    dispatch(getAllCategories);
+    dispatch(getAllProducts); 
+  }, [])
 
   return (
     <div>

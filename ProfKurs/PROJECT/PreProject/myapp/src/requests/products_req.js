@@ -1,4 +1,6 @@
+import { loadAllProductsAction } from "../store/reducers/allProductsReducer"
 import { loadProductsByCategoryAction } from "../store/reducers/productsBycategoryReducer"
+import { loadSingleProductAction } from "../store/reducers/singleProductReducer"
 
 
 export const getProductsByCategory = category => {
@@ -9,3 +11,16 @@ export const getProductsByCategory = category => {
     }
   }
 
+  export const getAllProducts = dispatch => {
+    fetch('https://fakestoreapi.com/products')
+        .then(res => res.json())
+        .then(json => dispatch(loadAllProductsAction(json)))
+  }
+
+  export const getSingleProduct = id => {
+    return dispatch => {
+      fetch(`https://fakestoreapi.com/products/${id}`)
+        .then(res => res.json())
+        .then(json => dispatch(loadSingleProductAction(json)))
+    }
+  }
