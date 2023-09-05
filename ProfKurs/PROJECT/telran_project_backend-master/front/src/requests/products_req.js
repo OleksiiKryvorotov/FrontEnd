@@ -1,4 +1,4 @@
-
+import { loadAllProductsAction } from "../store/reducers/allProductsReducer"
 import { loadProductsByCategoryAction } from "../store/reducers/productsByCategoryReducer"
 
 export const getProductsByCategory = (id) => {
@@ -8,7 +8,12 @@ export const getProductsByCategory = (id) => {
       .then(json => dispatch(loadProductsByCategoryAction(json.data)))
   }
 }
-export const getAllProducts = () => {}
+
+export const getAllProducts = dispatch => {
+  fetch('http://localhost:3333/products/all')
+      .then(res => res.json())
+      .then(json => dispatch(loadAllProductsAction(json)))
+}
 
 
 

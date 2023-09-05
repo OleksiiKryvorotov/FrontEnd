@@ -18,7 +18,7 @@
 
   10. При переходе на страницу AllProductsPage отрисовывать карточки всех товаров:
   - Создать AllProductsReducer, loadAllProductsAction, добавить AllProductsReducer в корневой редьюсер
-  - Написать функцию, отправляющую fetch-запрос по ссылке http://localhost:3333/products и записывающую полученные данные в состояние (вызвать loadAllProductsAction)
+  - Написать функцию, отправляющую fetch-запрос по ссылке http://localhost:3333/products/all и записывающую полученные данные в состояние (вызвать loadAllProductsAction)
   - Достать состояние из store в AllProductsPage, отрисовать карточки (ProductsContainer, ProductCard). ProductsContainer импортировать в AllProductsPage
 
   11. При клике на карточку товара перебрасывать на роут '/products/:id' (SingleProductPage)
