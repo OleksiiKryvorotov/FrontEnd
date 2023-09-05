@@ -6,7 +6,7 @@ import { useParams } from 'react-router-dom';
 
 export default function ProductsByCategoryPage() {
 
-  const {id} =useParams()
+  const {id} = useParams()
 
   const dispatch = useDispatch()
 
