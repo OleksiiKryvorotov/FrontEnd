@@ -16,7 +16,9 @@ export default function ProductsByCategoriesPage() {
 
   return (
     <div>
-        <ProductsContainer products = {products_by_categiry_state} />
+        <ProductsContainer products = {products_by_categiry_state} category_show=
+        {false}
+        />
     </div>
   )
 }

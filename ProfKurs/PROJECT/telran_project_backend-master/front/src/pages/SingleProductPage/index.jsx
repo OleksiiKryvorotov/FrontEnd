@@ -15,7 +15,7 @@ export default function SingleProductPage() {
 
   // console.log(single_product_state);
 
-  const [{ title, price, discont_price, description,  image }] = single_product_state
+  const  [{title, price, discont_price, description,  image}] = single_product_state
 
   return (
     <div>
