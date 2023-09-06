@@ -1,0 +1,15 @@
+.product {
+    border: 2px solid green;
+    padding: 15px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .product > div {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+  }
