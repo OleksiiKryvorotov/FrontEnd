@@ -28,6 +28,7 @@ export default function SingleProductPage() {
         <Link to={`/categories/${category}`}>
         <p>{category}</p>
         </Link>
+        <div className={s.add_btn}>Add to cart</div>
       </div>
     </div>
   )

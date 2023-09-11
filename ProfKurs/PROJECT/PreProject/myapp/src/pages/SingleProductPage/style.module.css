@@ -34,3 +34,13 @@
     width: fit-content;
     margin: 15px 0;
   }
+
+  .add_btn {
+    cursor: pointer;
+    background-color: rgb(144, 238, 144);
+    color: green;
+    border: 2px solid green;
+    border-radius: 10px;
+    padding: 10px;
+    width: fit-content;
+  }

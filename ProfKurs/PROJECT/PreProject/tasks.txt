@@ -37,4 +37,8 @@
 
  14. КОРЗИНА смотри ProductCard!
 
+ Добавить кнопку 'add to cart' на ProductCard и на SingleProductPage
+15. Реализовать добавление продуктов в корзину при клике не кнопку 'add to cart'
+
+
  

@@ -9,7 +9,7 @@ export default function AllProductsPage() {
 
   return (
     <div>
-      <ProductsContainer products={all_products_state} />
+      <ProductsContainer products={all_products_state} category_show={true} />
     </div>
   )
 }
