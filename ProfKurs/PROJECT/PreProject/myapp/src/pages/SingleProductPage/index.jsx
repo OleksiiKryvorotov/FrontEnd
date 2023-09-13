@@ -4,6 +4,7 @@ import { getSingleProduct } from '../../requests/products_req'
 import { useParams } from 'react-router-dom'
 import s from './style.module.css'
 import { Link } from 'react-router-dom'
+import { addToCartAction } from '../../store/reducers/cartReducer'
 
 export default function SingleProductPage() {
 
@@ -28,7 +29,11 @@ export default function SingleProductPage() {
         <Link to={`/categories/${category}`}>
         <p>{category}</p>
         </Link>
-        <div className={s.add_btn}>Add to cart</div>
+        <div className={s.add_btn}
+        onClick={() => dispatch(addToCartAction({ id: +id, title, image, price}))}
+        >
+          Add to cart
+          </div>
       </div>
     </div>
   )

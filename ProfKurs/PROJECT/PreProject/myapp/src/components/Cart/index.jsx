@@ -8,13 +8,16 @@ export default function Cart() {
 
     const cart_state = useSelector(state => state.cart)
 
+    console.log(cart_state);
+
+
     const dispatch = useDispatch()
 
     const total = cart_state.reduce((acc,  {price, count}) => acc + price * count, 0)
 
   return (
     <div>
-        <p>Cart:</p>
+        {/* <p>Cart:</p> */}
         <div>
         {
             cart_state.map(el => <CartItem key={el.id} {...el} />)
