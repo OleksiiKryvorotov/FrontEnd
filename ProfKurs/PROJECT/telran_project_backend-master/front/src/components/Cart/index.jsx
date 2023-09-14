@@ -14,7 +14,7 @@ export default function Cart() {
 
   return (
     <div>
-        <p>Cart:</p>
+        {/* <p>Cart:</p> */}
         <div>
         {
             cart_state.map(el => <CartItem key={el.id} {...el} />)

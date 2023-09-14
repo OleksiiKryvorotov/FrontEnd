@@ -20,7 +20,7 @@
 }
 
 .product_item > div p:nth-child(2) {
-  color: red;
+  color: darkmagenta;
   font-weight: 700;
   margin: 10px 0;
   font-size: 20px;
@@ -37,7 +37,8 @@
 } */
 
 .product_item > div p:nth-child(3) {
-  color: darkmagenta;
+  color: red;
+  
   font-weight: 700;
   margin: 10px 0;
   font-size: 20px;

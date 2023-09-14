@@ -4,9 +4,10 @@
     justify-content: center;
     align-items: center;  
     gap: 40px;
-    padding: 40px;    
+    padding: 40px; 
+      
     font-size: 16px;   
-    width: 1387px;
+    width: 1384px;
     height: 72px;
 }
 
@@ -16,7 +17,7 @@
    
 }
 
-.nav_menu img {          
+.nav_menu :first-child {            
     
 }
 
@@ -28,6 +29,7 @@
     border-radius: 10px;
     padding: 14px ;
     width: 125px;   
-    height: 49px;  
-  
+    height: 49px; 
+    
+      
 }

@@ -8,11 +8,35 @@
   }
   
   .card button {
-    background-color: green;
+    background-color: #339933;
     color: white;
     cursor: pointer;
     padding: 10px;
-    border: none;
+    border: none;    
     margin: 0 5px;
     border-radius: 7px;
+  }
+
+  .card img {
+    height:  150px;
+    width: 150px;
+    object-fit: contain;
+  }
+
+  .card p:nth-child(3) {
+    color: darkmagenta;
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  .card p:nth-child(4) {
+    color: red;
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  span {
+    cursor: pointer;   
+    font-weight: 900;
+    color: blue;
   }

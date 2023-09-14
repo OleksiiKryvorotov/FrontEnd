@@ -8,12 +8,12 @@ export const addToCartAction = payload => ({ type: ADD_TO_CART, payload });
 export const deleteFromCartAction = payload => ({ type: DELETE_FROM_CART, payload });
 export const incrementCountAction = payload => ({ type: INCREMENT_COUNT, payload });
 export const decrementCountAction = payload => ({ type: DECREMENT_COUNT , payload });
-export const clearCartAction = payload => ({ type: CLEAR_CART });
+export const clearCartAction = () => ({ type: CLEAR_CART });
 
 
 
 const checkProduct = (state, payload) => {
-  const productInCart = state.find(el => el.id === payload.id);
+  const productInCart = state.find(el => el.id === +payload.id);
   if(!productInCart){ 
     return [...state, {...payload, count: 1}]
   } else {
