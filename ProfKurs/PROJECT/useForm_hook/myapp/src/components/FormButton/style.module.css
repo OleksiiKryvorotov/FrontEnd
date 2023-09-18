@@ -1,0 +1,23 @@
+.btn {
+    border-radius: 55px;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .btn {
+    border-radius: 55px;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  .yellow_btn {
+    background-color: #FFE44D;
+    border: 1px solid #FFE44D;
+  }
+  
+  .white_btn {
+    background-color: white;
+    border: 1px solid #ECEFF1;
+  }
