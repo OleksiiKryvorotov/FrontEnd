@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { getDiscountProductsAction } from '../../../store/reducers/allProductsReducer'
+import s from './style.module.css'
 
 export default function DiscountForm() {
     const dispatch = useDispatch()
