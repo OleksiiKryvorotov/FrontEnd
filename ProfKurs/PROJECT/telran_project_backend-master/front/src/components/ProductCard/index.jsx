@@ -7,16 +7,20 @@ import { addToCartAction } from '../../store/reducers/cartReducer'
 export default function ProductCard({ id, title, image, price, discont_price, category, category_show}) {
 
   const dispatch = useDispatch()
+  const countDiscont =  Math.round(discont_price ? ((price - discont_price ) / price * 100) : 0)
 
   return (
     <div className={s.card_item}>
       <Link to={`/products/${id}`}>
         <div className={s.card}>
           <img src={`http://localhost:3333${image}`} alt={title} />
+          <p>{ discont_price ? discont_price : 0}$</p>
+          <p>{ price }$</p>
+          <p>{ countDiscont}%</p>
+
+         
            
-          {discont_price && <p>Discount: {discont_price}$</p>}
-				  
-				  {!discont_price && <p>Price: {price}$</p>}
+          
 
           <p>{ title }</p>  
           {/* <p>{ price }$</p>
@@ -39,3 +43,10 @@ export default function ProductCard({ id, title, image, price, discont_price, ca
     
   )
 }
+
+
+// {discont_price && <p>Discount: {discont_price}$</p>}
+				  
+// {!discont_price && <p>Price: {price}$</p>}
+
+
