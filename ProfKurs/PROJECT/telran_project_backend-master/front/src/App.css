@@ -5,9 +5,9 @@
 }
 
 #root {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   max-width: 1440px;
   margin: 0 auto;
 }
