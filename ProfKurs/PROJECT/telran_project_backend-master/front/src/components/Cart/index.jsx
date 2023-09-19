@@ -10,7 +10,9 @@ export default function Cart() {
 
     const dispatch = useDispatch()
 
-    const total = cart_state.reduce((acc,  {price, count}) => acc + price * count, 0)
+    const total = cart_state.reduce((acc,  {price, discont_price, count}) => {
+      const totalPrice = discont_price ? discont_price : price    
+      return acc + totalPrice * count} , 0)
 
   return (
     <div>

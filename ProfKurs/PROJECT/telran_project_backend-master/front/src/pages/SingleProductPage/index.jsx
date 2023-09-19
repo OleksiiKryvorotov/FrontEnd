@@ -25,6 +25,7 @@ export default function SingleProductPage() {
   
   // const category_name = categories_state.find(el => el.id === categoryId)
   
+  
   return (
     <div className={s.product_item}>
        <img src={`http://localhost:3333${image}`} alt={title} />
