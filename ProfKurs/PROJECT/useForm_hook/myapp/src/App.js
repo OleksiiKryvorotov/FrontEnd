@@ -1,32 +1,32 @@
+import { useState } from 'react';
 import './App.css';
-import FormItem from './components/FormItem';
+import ModalWindow from './components/ModalWindow';
 
 function App() {
+
+  const [ modalActive, setModaleActive ] = useState(false)
+
   return (
   <div>
-   <FormItem
-     title='Registration' 
-     infoText='By registering on the site, you agree to our Rules and Privacy Policy and consent to the newsletter.'
-     btn={{ submit: 'Registration', redirect: 'Login'}}
-     formType='registration'
-    />
 
-   <FormItem
-     title='Login'
-     infoText='Reset password'
-     btn={{ submit: 'Login', redirect: 'Registration'}}
-     formType='login'
-    />
+    <button
+    onClick={() => setModaleActive(true)}
+    >
+      Open modal window
+      </button>
 
-   <FormItem
-     title='Reset password'
-     infoText='The temporary password is valid for 24 hours.'
-     btn={{ submit: 'Send' }}    
-     formType='reset_password' 
-    />
+    <ModalWindow modalActive={modalActive} setModalActive={setModaleActive} />  
 
   </div>
   );
 }
 
 export default App;
+
+/*
+1. Создать состояниe modalActive(+setModalActive). Присвоить изначальное значение false
+2. Если в modalActive лежит true, то диву с классом modal добавлять еще и класс active
+3. При клике на кнопку Open modal window значение меняется на true.
+4. При клике на Х значение меняется на false
+*/
+

@@ -31,3 +31,9 @@
     font-size: 12px;
     color: #7B8E98;
   }
+
+  .error_msg {
+    color: red;
+    font-size: 12px;
+    text-align: end;
+  }
