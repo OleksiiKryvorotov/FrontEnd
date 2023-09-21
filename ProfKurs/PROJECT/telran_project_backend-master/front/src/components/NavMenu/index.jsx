@@ -11,6 +11,7 @@ export default function NavMenu() {
       <Link to='/categories'>Catalog</Link>
       <Link to='/'>Main Page</Link>      
       <Link to='/products'>All Products</Link>
+      <Link to='/sales'>All sales</Link>
       <Link to='/cart'><img src={bag} alt="vector"/> </Link>             
     </div>
   )
