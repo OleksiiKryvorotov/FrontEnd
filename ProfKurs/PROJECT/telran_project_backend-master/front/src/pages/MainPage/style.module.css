@@ -95,12 +95,31 @@
     
 }
 
-.discount_descr {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 150px;
-    /* align-items: center; */
+.discount_btn {
+    display: flex;    
+    align-items: center;   
+    justify-content: center;
+    width: 473px;
+    height: 85px;
+    font-size: 35px;
+    font-weight: 473;
+    color: white;
+    /* font-family: cursive; */
+    /* text-transform: uppercase; */
+    background-color: transparent;
+    border: 2.4px solid white;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    cursor: pointer;    
+}
+
+.phone_num_inp{
+    width: 473px;
+    height: 85px;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    margin-top: 50px;   
 }
 
 .discount_descr  h1{
@@ -119,45 +138,14 @@
     letter-spacing: 3px;
 }
 
-
-.phone_num_inp{
-    width: 473px;
-    height: 85px;
-    border: none;
-    border-radius: 20px;
-    margin-bottom: 30px;
-    margin-top: 50px;
-   
-}
-
 .phone_num_inp::placeholder{
     font-size: 25px;
     font-weight: 600;
     padding-left: 50px;
     font-family: cursive;
 }
-
-.discount_btn{
-    width: 473px;
-    height: 85px;
-    font-size: 35px;
-    font-weight: 473;
-    color: white;
-    /* font-family: cursive; */
-    /* text-transform: uppercase; */
-    background-color: transparent;
-    border: 2.4px solid white;
-    border-radius: 20px;
-    margin-bottom: 30px;
-    
-}
-
-/* ------------------------------ */
-
-/* sale_container */
 .product_container{
-    width: 320px;
-    
+    width: 320px;    
 }
 
 .gen_sale_container{
@@ -170,4 +158,5 @@
     font-weight: bold;
     margin-bottom: 20px;
 }
+
 

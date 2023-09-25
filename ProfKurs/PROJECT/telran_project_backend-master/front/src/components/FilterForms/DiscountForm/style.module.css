@@ -14,7 +14,7 @@
     margin-top: 30px;
     margin-bottom: 30px;
     margin-left: 40px;
-    gap: 10px;
+    gap: 10px;    
 }
 
 .price input {
@@ -25,9 +25,10 @@
     margin-left: 20px;
     border: 1px solid black;
 }
- button {
+
+.btn_disc {
     display: none;
- }
+}
 
 .discount {
     display: inline-flex;

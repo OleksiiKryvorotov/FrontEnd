@@ -15,7 +15,7 @@ export default function AllProductsPage() {
   return (
     
     <div>
-      <h1>All Products</h1>
+      <h1 className={s.all_pro}>All Products</h1>
       {/* <FilterForm /> */}
       <DiscountForm />
       {/* <SortForm /> */}

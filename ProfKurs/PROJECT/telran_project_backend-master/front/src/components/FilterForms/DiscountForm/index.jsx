@@ -35,7 +35,7 @@ export default function DiscountForm() {
             <p className={s.title}>Price</p>
             <input type='number' placeholder='min' name='min' />
             <input type='number' placeholder='max' name='max' />
-            <button type='submit'>Filter</button>
+            <button className={s.btn_disc} type='submit'>Filter</button>
           </form>
 	    
 

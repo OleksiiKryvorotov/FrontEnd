@@ -3,6 +3,7 @@ import ProductsContainer from '../../components/ProductsContainer'
 import { useDispatch, useSelector } from 'react-redux'
 import { getAllProducts } from '../../requests/products_req'
 import SortSales from '../../components/FilterForms/SortSales'
+import s from './style.module.css'
 
 export default function AllSales() {
 
@@ -17,7 +18,7 @@ export default function AllSales() {
   
     return (
       <div>
-         <h1>All Sales</h1>
+         <h1 className={s.all_pro}>All Sales</h1>
         <SortSales />
         <ProductsContainer products={allSalesProducts} productsStyle={true}/>
       </div>
