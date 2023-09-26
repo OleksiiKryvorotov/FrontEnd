@@ -25,7 +25,7 @@
       margin-left: 20px;
       border: 1px solid black;
   }
-   button {
+  .btn_filter {
       display: none;
    }  
   

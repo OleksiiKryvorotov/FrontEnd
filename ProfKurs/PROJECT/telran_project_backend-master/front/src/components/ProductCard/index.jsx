@@ -8,6 +8,7 @@ export default function ProductCard({ id, title, image, price, discont_price, ca
 
   const dispatch = useDispatch()
   const countDiscont =  Math.round(discont_price ? ((price - discont_price ) / price * 100) : 0)
+ 
 
   return (
     <div className={s.card_item}>
@@ -19,12 +20,12 @@ export default function ProductCard({ id, title, image, price, discont_price, ca
         <div className={s.price_info}>
             {discont_price && discont_price > 0 ? (
             <p>
-              {discont_price}$			      
-			      <span className={s['discounted-price']}>{price}$</span>
+              {discont_price.toFixed(2)}$			      
+			      <span className={s['discounted-price']}>{price.toFixed(2)}$</span>
             </p>
             ):
             (
-            <p>{price}$</p>
+            <p>{price.toFixed(2)}$</p>
             )}
             <p>{ countDiscont}%</p>
         </div>          

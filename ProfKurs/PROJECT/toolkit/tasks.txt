@@ -1,0 +1,7 @@
+1. Создать store и подключить его к приложению
+2. Создать todoSlice (аналог todoReducer) и импортировать его в store
+3. Создать AddTodoForm (input + button). При сабмите формируется объект id, title, completed (false) b выводится в консоль
+4. Создать TodosContainer + TodoItem
+5. AddTodoForm и TodosContainer добавить в App
+6. Создать метод add_task. Отрисовать карточки
+7. Создать метод delete_todo, который срабатывает при клике на крестик внутри карточки

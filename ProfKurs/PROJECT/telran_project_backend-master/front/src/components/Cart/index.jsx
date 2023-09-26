@@ -11,7 +11,7 @@ export default function Cart() {
     const dispatch = useDispatch()
 
     const total = cart_state.reduce((acc,  {price, discont_price, count}) => {
-      const totalPrice = discont_price ? discont_price : price    
+    const totalPrice = discont_price ? discont_price : price    
       return acc + totalPrice * count} , 0)
 
   return (
@@ -27,7 +27,7 @@ export default function Cart() {
         >
           Clear cart
           </div>
-          <p>Total: {total}$</p>
+          <p>Total: {total.toFixed(2)}$</p>
     </div>
   )
 }
