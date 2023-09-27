@@ -7,8 +7,23 @@ import { useDispatch, useSelector } from 'react-redux'
 import { getAllProducts } from '../../requests/products_req'
 import bush from '../../Media/bush.png'
 import gnome from '../../Media/gnome.png'
+import {useForm} from 'react-hook-form'
 
 export default function MainPage() {
+
+  const { register, handleSubmit, formState: { errors } } = useForm({
+    mode: 'onChange'
+});
+
+const phoneNumberRegister = register('phoneNumber', {
+    required: "*This field is required",
+    pattern: {
+        value: /^(?:\+49|0)[1-9][0-9]*(?:[\s-]?\d+)*$/,
+        message: '*Please, enter valid phoneNumber'
+    }
+});
+
+const submit = data => console.log(data);
 
   const dispatch = useDispatch()
 
@@ -16,12 +31,11 @@ export default function MainPage() {
 
   const products = useSelector(state => state.allProducts)
 
-  const first_four_products = products.filter(el => el.discont_price !== null).slice(0,4)  
+  const first_four_products = products.filter(el => el.discont_price !== null).slice(0,3)  
   
 
   return (
-    <div className={s.wrapper}>      
-
+    <div className={s.wrapper}>  
       <div className={s.sale_container}> 
           <div className={s.text}>
              <p>Sale</p>
@@ -55,8 +69,15 @@ export default function MainPage() {
         <div className={s.discount_descr}>
           <h1>5% off</h1>
           <h2>on the first order</h2>
-          <input type="text" className={s.phone_num_inp} placeholder='+49' />
-          <button className={s.discount_btn}>Get a discount</button>
+          <form onSubmit={handleSubmit(submit)}>
+              <input type="text"
+                    placeholder='+49' name='phoneNumber'
+                    {...phoneNumberRegister}
+              />
+
+                     {errors.phoneNumber && <p className={s.error_msg}>{errors.phoneNumber?.message}</p>}
+               <button className={s.discount_btn}>Get a discount</button>
+          </form>
         </div>
       </div>
 
