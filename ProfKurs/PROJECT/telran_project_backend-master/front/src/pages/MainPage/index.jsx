@@ -69,9 +69,9 @@ const submit = data => console.log(data);
         <div className={s.discount_descr}>
           <h1>5% off</h1>
           <h2>on the first order</h2>
-          <form onSubmit={handleSubmit(submit)}>
+          <form  className={s.phone_num}nSubmit={handleSubmit(submit)}>
               <input type="text"
-                    placeholder='+49' name='phoneNumber'
+                    placeholder=' +49' name='phoneNumber'
                     {...phoneNumberRegister}
               />
 

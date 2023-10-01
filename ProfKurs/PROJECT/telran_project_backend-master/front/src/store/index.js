@@ -13,6 +13,7 @@ const rootReducer = combineReducers({
     allProducts: allProductsReducer,
     singleProduct: singleProductReducer,
     cart: cartReducer
+    // countCart: selectCartItemCount
        
 });
   

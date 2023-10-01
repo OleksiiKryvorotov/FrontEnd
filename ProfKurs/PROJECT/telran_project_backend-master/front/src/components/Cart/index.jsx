@@ -9,6 +9,12 @@ export default function Cart() {
     const cart_state = useSelector(state => state.cart)
 
     const dispatch = useDispatch()
+    
+    // Счетчик товаров в корзине:
+  //   const itemCount = cart_state.reduce((acc, { count }) => {
+  //     return acc + count;
+  // }, 0);
+  //--------------------------------------
 
     const total = cart_state.reduce((acc,  {price, discont_price, count}) => {
     const totalPrice = discont_price ? discont_price : price    
@@ -38,7 +44,8 @@ export default function Cart() {
        {cart_state.length > 0 && (
         <form onSubmit={handleSubmit} className={s.order}>
           <h2>Order details</h2>
-          <p>Total {total.toFixed(2)}$</p>
+          <p>Total {total.toFixed(2)}$</p>      
+
           <div className={s.pfon_ord}>
             <input
               type="number"
@@ -51,6 +58,9 @@ export default function Cart() {
           </div>
         </form>                
           )}
+
+        {/* <p>{itemCount}</p> */}
+
         </div>
       </div>
       
