@@ -13,6 +13,8 @@ import { getAllCategories } from './requests/categories_req';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { getAllProducts } from './requests/products_req';
+import UsersPage from './pages/UsersPage';
+import { getAllUsers } from './requests/users_req';
 
 function App() {
 
@@ -21,6 +23,7 @@ function App() {
   useEffect(() => {
     dispatch(getAllCategories);
     dispatch(getAllProducts); 
+    dispatch(getAllUsers)
   }, [])
 
   return (
@@ -33,6 +36,7 @@ function App() {
         <Route path='/products' element={<AllProductsPage />} />
         <Route path='/products/:id' element={<SingleProductPage />} />
         <Route path='/cart' element={<CartPage />} />
+        <Route path='/users' element={<UsersPage />} />
         <Route path='*' element={<NotFoundPage />} />
       </Routes>
       <Footer />

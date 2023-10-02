@@ -24,3 +24,14 @@ export const getProductsByCategory = category => {
         .then(json => dispatch(loadSingleProductAction(json)))
     }
   }
+
+  // POST запросы! --------------------------------------------
+
+  export const addNewProduct = new_product => {
+    fetch('https://fakestoreapi.com/products', {
+      method: 'POST',
+      body: JSON.stringify(new_product)
+    })
+    .then(res => res.json())
+    .then(json => console.log(json, 'new product added')) 
+  }

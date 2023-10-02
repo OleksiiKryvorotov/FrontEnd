@@ -19,7 +19,7 @@ const phoneNumberRegister = register('phoneNumber', {
     required: "*This field is required",
     pattern: {
         value: /^(?:\+49|0)[1-9][0-9]*(?:[\s-]?\d+)*$/,
-        message: '*Please, enter valid phoneNumber'
+        message: '*Please, enter valid phone number'
     }
 });
 
@@ -71,7 +71,7 @@ const submit = data => console.log(data);
           <h2>on the first order</h2>
           <form  className={s.phone_num}nSubmit={handleSubmit(submit)}>
               <input type="text"
-                    placeholder=' +49' name='phoneNumber'
+                    placeholder=' +49' name='phonenumber'
                     {...phoneNumberRegister}
               />
 
