@@ -4,6 +4,7 @@ import GoogleMap from './GoogleMap'
 import insta from '../../Media/insta.png'
 import whatsapp from '../../Media/whatsapp.png'
 import { Link } from 'react-router-dom'
+
 export default function Footer() {
   return (
 	<div className={s.wrapper}>

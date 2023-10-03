@@ -5,7 +5,7 @@ import s from './style.module.css'
 
 export default function ProductsContainer({ products, category_show }) {
     return (
-      <div className={s.container}>
+      <div className={s.card_container}>
           {
             products
             .filter(el => el.show_product)

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function GoogleMap() {
   const iframeStyle = {
-    width: "100%",
+    width: "1440px",
     height: "525px",
     border: "0",
     scrolling: "no",
@@ -11,7 +11,7 @@ export default function GoogleMap() {
   };
 
   return (
-    <div style={{ width: "100%" }}>
+    <div style={{ width: "1440px" }}>
       <iframe
         title="GoogleMaps"
         style={iframeStyle}

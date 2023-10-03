@@ -1,8 +1,9 @@
 .google {
     background-color: white;
-    padding: 4px 10px;
+    /* padding: 4px 10px; */
     color: white;
     font-size: 25px;
+    margin-top: 50px;
   }
 /* .h5{
 	height: 40px;
@@ -18,8 +19,8 @@
 } */
 .wrapper{
     color: #575959;
-    margin: 90px 40px;
-    width: 100%;
+    /* margin: 90px; */
+    width: 1440px;
 }
 
 .text_container{
@@ -31,7 +32,7 @@ h1{
 	color: #000;
     font-size: 40px;
     font-weight: 700;
-	margin: 30px auto;
+	margin: 80px auto;
 }
 
 .number{
@@ -90,7 +91,7 @@ h1{
 
 .map{
     margin-top: 50px;
-    width: 100%;
+    
 }
 
 .number a {
@@ -99,5 +100,7 @@ h1{
     font-weight: medium;
     
 }
+
+
 
  
