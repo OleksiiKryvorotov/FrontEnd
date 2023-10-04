@@ -3,13 +3,17 @@ import { useDispatch, useSelector } from 'react-redux'
 import CartItem from '../CartItem'
 import s from './style.module.css'
 import { clearCartAction } from '../../store/reducers/cartReducer'
+import { useEffect } from 'react'
 
 export default function Cart() {
 
-    const cart_state = useSelector(state => state.cart)
+  //localStorage!!!! ------------------------------------------
+  const cart_state = useSelector(state => state.cart);
 
-    console.log(cart_state);
-
+  useEffect(() => {
+    localStorage.setItem('shopping_cart', JSON.stringify(cart_state))
+  }, [cart_state]);
+  //---------------------------------------------------------------
 
     const dispatch = useDispatch()
 
