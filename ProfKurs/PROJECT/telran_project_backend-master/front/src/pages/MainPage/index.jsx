@@ -4,35 +4,40 @@ import CategoriesContainer from '../../components/CategoriesContainer'
 import ProductsContainer  from '../../components/ProductsContainer'
 import s from './style.module.css'
 import { useDispatch, useSelector } from 'react-redux'
-import { getAllProducts } from '../../requests/products_req'
+import { addNewProductSale, getAllProducts } from '../../requests/products_req'
 import bush from '../../Media/bush.png'
 import gnome from '../../Media/gnome.png'
 import {useForm} from 'react-hook-form'
 
 export default function MainPage() {
 
-  const { register, handleSubmit, formState: { errors } } = useForm({
+const { register, handleSubmit, reset, formState: { errors } } = useForm({
     mode: 'onChange'
 });
 
+const dispatch = useDispatch()
+
+useEffect(() => { dispatch(getAllProducts) }, [dispatch])
+
+const products = useSelector(state => state.allProducts)
+
+const first_four_products = products.filter(el => el.discont_price !== null).slice(0,3) 
+
 const phoneNumberRegister = register('phoneNumber', {
-    required: "*This field is required",
-    pattern: {
-        value: /^(?:\+49|0)[1-9][0-9]*(?:[\s-]?\d+)*$/,
-        message: '*Please, enter valid phone number'
-    }
+  required: "*This field is required",
+  pattern: {
+      value: /^(?:\+49|0)[1-9][0-9]*(?:[\s-]?\d+)*$/,
+      message: '*Please, enter valid phone number'
+  }
 });
 
-const submit = data => console.log(data);
+// const submit = data => console.log(data);
 
-  const dispatch = useDispatch()
+const submit = new_product_obj => {
+  addNewProductSale(new_product_obj);
+  reset()
 
-  useEffect(() => { dispatch(getAllProducts) }, [dispatch])
-
-  const products = useSelector(state => state.allProducts)
-
-  const first_four_products = products.filter(el => el.discont_price !== null).slice(0,3)  
-  
+}  
 
   return (
     <div className={s.wrapper}>  
